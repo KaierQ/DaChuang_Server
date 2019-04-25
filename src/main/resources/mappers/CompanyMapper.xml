@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.edu.sicnu.cs.dao.company.CompanyDao" >
+
+  <resultMap id="BaseResultMap" type="cn.edu.sicnu.cs.pojo.Company" >
+    <id column="c_id" property="cId" jdbcType="INTEGER" />
+    <result column="company_name" property="companyName" jdbcType="VARCHAR" />
+    <result column="ceo_name" property="ceoName" jdbcType="VARCHAR" />
+    <result column="ceo_id" property="ceoId" jdbcType="VARCHAR" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="sys_check_password" property="sysCheckPassword" jdbcType="VARCHAR" />
+    <result column="intro" property="intro" jdbcType="LONGVARCHAR" />
+    <result column="tel" property="tel" jdbcType="LONGVARCHAR" />
+  </resultMap>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from company
+    where c_id = #{cId,jdbcType=INTEGER}
+  </delete>
+
+  <insert id="insert" parameterType="cn.edu.sicnu.cs.pojo.Company" >
+    insert into company (c_id, company_name, ceo_name, 
+      ceo_id, username, password, 
+      sys_check_password, intro)
+    values (#{cId,jdbcType=INTEGER}, #{companyName,jdbcType=VARCHAR}, #{ceoName,jdbcType=VARCHAR}, 
+      #{ceoId,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{sysCheckPassword,jdbcType=VARCHAR}, #{intro,jdbcType=LONGVARCHAR})
+  </insert>
+
+  <update id="updateByPrimaryKey" parameterType="cn.edu.sicnu.cs.pojo.Company" >
+    update company
+    <trim prefix="set" suffixOverrides=",">
+      <if test="companyName!=null">company_name = #{companyName,jdbcType=VARCHAR},</if>
+      <if test="ceoName!=null">ceo_name = #{ceoName,jdbcType=VARCHAR},</if>
+      <if test="ceoId!=null">ceo_id = #{ceoId,jdbcType=VARCHAR},</if>
+      <if test="username!=null">username = #{username,jdbcType=VARCHAR},</if>
+      <if test="password!=null">password = #{password,jdbcType=VARCHAR},</if>
+      <if test="sysCheckPassword!=null">sys_check_password = #{sysCheckPassword,jdbcType=VARCHAR},</if>
+      <if test="intro!=null">intro = #{intro,jdbcType=LONGVARCHAR},</if>
+    </trim>
+    where c_id = #{cId,jdbcType=INTEGER}
+  </update>
+
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select c_id, company_name, ceo_name, ceo_id, username, password, sys_check_password, 
+    intro
+    from company
+    where c_id = #{cId,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select c_id, company_name, ceo_name, ceo_id, username, password, sys_check_password, 
+    intro
+    from company
+  </select>
+
+  <select id="selectPasswordByUsername" resultType="java.lang.String">
+    select password from company where username = #{username};
+  </select>
+
+</mapper>

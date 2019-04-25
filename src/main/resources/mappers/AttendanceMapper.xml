@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.edu.sicnu.cs.dao.check_attendance.AttendanceDao" >
+
+  <resultMap id="BaseResultMap" type="cn.edu.sicnu.cs.pojo.Attendance" >
+    <result column="e_id" property="eId" jdbcType="INTEGER" />
+    <result column="workdays" property="workdays" jdbcType="INTEGER" />
+    <result column="nolate_days" property="nolateDays" jdbcType="INTEGER" />
+    <result column="late_days" property="lateDays" jdbcType="INTEGER" />
+    <result column="early_leftdays" property="earlyLeftdays" jdbcType="INTEGER" />
+    <result column="lated_leftdays" property="latedLeftdays" jdbcType="INTEGER" />
+    <result column="month_workdays" property="monthWorkdays" jdbcType="INTEGER" />
+    <result column="month_nolate_days" property="monthNolateDays" jdbcType="INTEGER" />
+    <result column="month_late_days" property="monthLateDays" jdbcType="INTEGER" />
+    <result column="month_early_leftdays" property="monthEarlyLeftdays" jdbcType="INTEGER" />
+    <result column="month_lated_leftdays" property="monthLatedLeftdays" jdbcType="INTEGER" />
+  </resultMap>
+
+  <insert id="insert" parameterType="cn.edu.sicnu.cs.pojo.Attendance" >
+    insert into attendance (e_id, workdays, nolate_days, 
+      late_days, early_leftdays, lated_leftdays, 
+      month_workdays, month_nolate_days, month_late_days, 
+      month_early_leftdays, month_lated_leftdays)
+    values (#{eId,jdbcType=INTEGER}, #{workdays,jdbcType=INTEGER}, #{nolateDays,jdbcType=INTEGER}, 
+      #{lateDays,jdbcType=INTEGER}, #{earlyLeftdays,jdbcType=INTEGER}, #{latedLeftdays,jdbcType=INTEGER}, 
+      #{monthWorkdays,jdbcType=INTEGER}, #{monthNolateDays,jdbcType=INTEGER}, #{monthLateDays,jdbcType=INTEGER}, 
+      #{monthEarlyLeftdays,jdbcType=INTEGER}, #{monthLatedLeftdays,jdbcType=INTEGER})
+  </insert>
+
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select e_id, workdays, nolate_days, late_days, early_leftdays, lated_leftdays, month_workdays, 
+    month_nolate_days, month_late_days, month_early_leftdays, month_lated_leftdays
+    from attendance
+  </select>
+
+  <delete id="deleteByEid" parameterType="java.lang.Integer">
+    delete from attendance where e_id = #{eid};
+  </delete>
+
+  <update id="updateAttendance" parameterType="cn.edu.sicnu.cs.pojo.Attendance">
+    update attendance
+      <trim prefix="set" suffixOverrides=",">
+        <if test="workdays!=null">workdays=#{workdays},</if>
+        <if test="nolateDays!=null">nolate_days=#{nolateDays},</if>
+        <if test="lateDays!=null">late_days=#{lateDays},</if>
+        <if test="earlyLeftdays!=null">early_leftdays=#{earlyLeftdays},</if>
+        <if test="latedLeftdays!=null">lated_leftdays=#{latedLeftdays},</if>
+        <if test="monthWorkdays!=null">month_workdays=#{monthWorkdays},</if>
+        <if test="monthNolateDays!=null">month_nolate_days=#{monthNolateDays},</if>
+        <if test="monthLateDays!=null">month_late_days=#{monthLateDays},</if>
+        <if test="monthEarlyLeftdays!=null">month_early_leftdays=#{monthEarlyLeftdays},</if>
+        <if test="monthLatedLeftdays!=null">month_lated_leftdays=#{monthLatedLeftdays},</if>
+      </trim>
+      where e_id=#{eId};
+  </update>
+
+  <select id="selectByEid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select * from attendance where e_id = #{eid}
+  </select>
+
+</mapper>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.edu.sicnu.cs.dao.check_attendance.AttendanceDetailDao" >
+  <resultMap id="BaseResultMap" type="cn.edu.sicnu.cs.pojo.AttendanceDetail" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="e_id" property="eId" jdbcType="INTEGER" />
+    <result column="created_date" property="createdDate" jdbcType="DATE" />
+    <result column="arrive_time" property="arriveTime" jdbcType="TIMESTAMP" />
+    <result column="left_time" property="leftTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from attendance_detail
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.edu.sicnu.cs.pojo.AttendanceDetail" >
+    insert into attendance_detail (id, e_id, created_date, 
+      arrive_time, left_time)
+    values (#{id,jdbcType=INTEGER}, #{eId,jdbcType=INTEGER}, #{createdDate,jdbcType=DATE}, 
+      #{arriveTime,jdbcType=TIMESTAMP}, #{leftTime,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.edu.sicnu.cs.pojo.AttendanceDetail" >
+    update attendance_detail
+      <trim prefix="set" suffixOverrides=",">
+        <if test="eId!=null">e_id = #{eId,jdbcType=INTEGER},</if>
+        <if test="createdDate!=null">created_date = #{createdDate,jdbcType=DATE},</if>
+        <if test="arriveTime!=null">arrive_time = #{arriveTime,jdbcType=TIMESTAMP},</if>
+        <if test="leftTime!=null">left_time = #{leftTime,jdbcType=TIMESTAMP},</if>
+      </trim>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select id, e_id, created_date, arrive_time, left_time
+    from attendance_detail
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, e_id, created_date, arrive_time, left_time
+    from attendance_detail
+  </select>
+
+  <update id="updateLeftTimeByEid" parameterType="java.lang.Integer">
+    update attendance_detail set left_time = now() where e_id=#{eid} and created_date=now();
+  </update>
+
+  <select id="selectRecentAttendanceDatail" resultMap="BaseResultMap">
+    select id, e_id, created_date, arrive_time, left_time
+    from attendance_detail where e_id = #{eid} and created_date >= #{date};
+  </select>
+
+  <select id="selectTodayByEid" resultMap="BaseResultMap">
+    select * from attendance_detail where e_id = #{eid} and created_date = now();
+  </select>
+
+  <select id="selectAllByEid" resultType="attendanceDetail">
+      select * from attendance_detail where e_id = #{eid}
+  </select>
+
+  <select id="selectToday" resultType="attendanceDetail">
+    select * from attendance_detail where created_date = now();
+  </select>
+
+</mapper>
