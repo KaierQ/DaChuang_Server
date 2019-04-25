@@ -40,7 +40,7 @@
             </map>
         </property>
         <!--默认数据源路由-->
-        <property name="defaultTargetDataSource" ref="xxxCompanyDataSource"/>
+        <property name="defaultTargetDataSource" ref="companyDataSource"/>
     </bean>
 
     <!--创建SqlSessionFactory,同时指定数据源和映射文件-->

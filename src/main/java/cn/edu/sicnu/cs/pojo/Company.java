@@ -106,6 +106,7 @@ public class Company {
                 ", password='" + password + '\'' +
                 ", sysCheckPassword='" + sysCheckPassword + '\'' +
                 ", intro='" + intro + '\'' +
+                ", tel='" + tel + '\'' +
                 '}';
     }
 }

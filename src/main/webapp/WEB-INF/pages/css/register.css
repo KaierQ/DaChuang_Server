@@ -1,0 +1,19 @@
+#register input.input_focus{
+	background-color: #BEE7FC;
+}
+
+#register input {
+	vertical-align: middle;
+	border: 1px solid #999;
+	width: 250px;
+	height: 30px;
+	line-height: 30px;
+}
+
+#intro{
+	margin-left: 60px;
+}
+
+#sbt{
+	margin-left: 50px;
+}

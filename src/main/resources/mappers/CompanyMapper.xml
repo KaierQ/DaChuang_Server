@@ -19,7 +19,7 @@
     where c_id = #{cId,jdbcType=INTEGER}
   </delete>
 
-  <insert id="insert" parameterType="cn.edu.sicnu.cs.pojo.Company" >
+  <insert id="insert" useGeneratedKeys="true" keyColumn="c_id" keyProperty="cId" parameterType="cn.edu.sicnu.cs.pojo.Company" >
     insert into company (c_id, company_name, ceo_name, 
       ceo_id, username, password, 
       sys_check_password, intro)
