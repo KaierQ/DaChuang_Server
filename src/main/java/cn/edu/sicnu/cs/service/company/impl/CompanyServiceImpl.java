@@ -2,6 +2,7 @@ package cn.edu.sicnu.cs.service.company.impl;
 
 import cn.edu.sicnu.cs.dao.company.CompanyDao;
 import cn.edu.sicnu.cs.pojo.Company;
+import cn.edu.sicnu.cs.pojo.ManagerLoginCheckBean;
 import cn.edu.sicnu.cs.service.company.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -47,7 +48,7 @@ public class CompanyServiceImpl implements CompanyService {
     }
 
     @Override
-    public String selectPasswordByUsername(String username) {
+    public ManagerLoginCheckBean selectPasswordByUsername(String username) {
         return companyDao.selectPasswordByUsername(username);
     }
 

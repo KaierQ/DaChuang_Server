@@ -1,6 +1,7 @@
 package cn.edu.sicnu.cs.controller.company;
 
 import cn.edu.sicnu.cs.pojo.Company;
+import cn.edu.sicnu.cs.pojo.ManagerLoginCheckBean;
 import cn.edu.sicnu.cs.service.company.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -65,12 +66,12 @@ public class CompanyController {
     public void managerLogin(@RequestParam("username")String userName,@RequestParam("password")String password,HttpServletResponse response) throws IOException {
         System.out.println(userName+"-----"+password);
         //检查企业领导用户名和密码
-        String ret = companyService.selectPasswordByUsername(userName);
+        ManagerLoginCheckBean ret = companyService.selectPasswordByUsername(userName);
         response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html;charset=UTF-8");
         //检测成功返回true
-        if(ret!=null&&ret.equals(password)){
-            response.getWriter().print("true");
+        if(ret!=null&&ret.getPassword().equals(password)){
+            response.getWriter().print("true&&"+ret.getcId());
         }else{
             response.getWriter().print("false");
         }

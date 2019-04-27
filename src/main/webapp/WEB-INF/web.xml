@@ -31,7 +31,7 @@
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
-  <!--设置配置文件的路径,让其从resources资源目录下在家-->
+  <!--设置配置文件的路径,让其从resources资源目录下加载-->
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:config/applicationContext.xml</param-value>

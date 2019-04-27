@@ -1,6 +1,7 @@
 package cn.edu.sicnu.cs.service.company;
 
 import cn.edu.sicnu.cs.pojo.Company;
+import cn.edu.sicnu.cs.pojo.ManagerLoginCheckBean;
 
 import java.util.List;
 
@@ -49,6 +50,6 @@ public interface CompanyService {
      * @param username
      * @return
      */
-    String selectPasswordByUsername(String username);
+    ManagerLoginCheckBean selectPasswordByUsername(String username);
 
 }

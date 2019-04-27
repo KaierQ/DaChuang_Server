@@ -55,8 +55,13 @@
     from company
   </select>
 
-  <select id="selectPasswordByUsername" resultType="java.lang.String">
-    select password from company where username = #{username};
+  <resultMap id="ManagerLoginCheckMap" type="ManagerLoginCheckBean">
+    <id column="c_id" property="cId" jdbcType="INTEGER" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <select id="selectPasswordByUsername" resultMap="ManagerLoginCheckMap">
+    select c_id,password from company where username = #{username};
   </select>
 
 </mapper>

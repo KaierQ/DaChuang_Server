@@ -11,5 +11,12 @@ public class Constances {
 
     public static final int FAIL = 2;
 
+    public static String jdbcDriver="jdbc:mysql://";
+
+    public static String IP="127.0.0.1";
+
+    public static String dbPort="3306";
+
+
 
 }

@@ -1,6 +1,8 @@
 package cn.edu.sicnu.cs.dao.company;
 
 import cn.edu.sicnu.cs.pojo.Company;
+import cn.edu.sicnu.cs.pojo.ManagerLoginCheckBean;
+
 import java.util.List;
 
 /**
@@ -47,6 +49,6 @@ public interface CompanyDao {
      * @param username
      * @return
      */
-    String selectPasswordByUsername(String username);
+    ManagerLoginCheckBean selectPasswordByUsername(String username);
 
 }

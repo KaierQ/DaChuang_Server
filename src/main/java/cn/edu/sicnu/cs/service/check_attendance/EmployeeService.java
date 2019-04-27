@@ -1,7 +1,6 @@
 package cn.edu.sicnu.cs.service.check_attendance;
 
 import cn.edu.sicnu.cs.pojo.Employee;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -9,7 +8,6 @@ import java.util.List;
  * @author kaier
  * @date 2019-04-21 20:08
  */
-@Service("employeeService")
 public interface EmployeeService {
     /**
      * 根据主键删除员工

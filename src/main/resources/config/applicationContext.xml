@@ -8,7 +8,10 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd
        http://www.springframework.org/schema/tx
-       http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+
     <!--Spring容器和加载MyBatis配置-->
     <!--配置扫描的包-->
     <context:component-scan base-package="cn.edu.sicnu.cs">
@@ -24,13 +27,15 @@
         <property name="user" value="qiukai"/>
         <property name="password" value="qiukai010203"/>
     </bean>
+
     <!--访问某个企业的数据库-->
     <bean id="xxxCompanyDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/facebook_company?useUnicode=true&amp;characterEncoding=UTF8&amp;useSSL=false"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/10001_company?useUnicode=true&amp;characterEncoding=UTF8&amp;useSSL=false"/>
         <property name="user" value="qiukai"/>
         <property name="password" value="qiukai010203"/>
     </bean>
+
     <!--动态设置数据源的路由-->
     <bean id="dataSources" class="cn.edu.sicnu.cs.datasource.DataSources">
         <property name="targetDataSources">
