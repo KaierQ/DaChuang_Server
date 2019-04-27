@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-
+    <img src="images/employee/person.jpg" class="person_img">
     <a href="/test/findAll">测试动态更换数据库</a>
 
 </body>

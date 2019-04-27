@@ -1,0 +1,30 @@
+body{
+    text-align: center
+}
+.profile{
+    margin:0 auto; 
+    width:400px; 
+    height:fit-content; 
+    /* border:1px solid #F00 */
+} 
+.employee{
+    /* margin-top: 50px auto;
+    width:400px; 
+    height: fit-content;
+    border:1px solid black */
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border:1px solid black
+}
+.person_img{
+    width: 100px;
+    height: 100px;
+}
+
+.info{
+    text-align: left;
+}

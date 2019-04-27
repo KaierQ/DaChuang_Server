@@ -30,7 +30,7 @@ public class EmployeeController {
         for (Employee employee : employees) {
             System.out.println(employee);
         }
-        return "result";
+        return "/employee/employee";
     }
 
 }
