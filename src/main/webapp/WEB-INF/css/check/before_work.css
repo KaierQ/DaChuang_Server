@@ -3,7 +3,7 @@ body{
 }
 .profile{
     margin:0 auto;
-    width:400px;
+    width:350px;
     height:fit-content;
     /* border:1px solid #F00 */
 }
@@ -24,6 +24,6 @@ body{
 }
 
 .employee img{
-    width: 400px;
+    width: inherit;
     height: 300px;
 }

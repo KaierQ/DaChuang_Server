@@ -3,7 +3,7 @@ body{
 }
 .profile{
     margin:0 auto;
-    width:365px;
+    width:350px;
     height:fit-content;
 }
 .employee{
@@ -25,7 +25,7 @@ body{
 }
 
 .link_analogy{
-    margin-left: 2px;
+    margin-left: 5px;
 }
 
 .link_analogy a{
