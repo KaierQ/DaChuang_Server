@@ -1,6 +1,7 @@
 package cn.edu.sicnu.cs.service.check_attendance;
 
 import cn.edu.sicnu.cs.pojo.AttendanceDetail;
+import cn.edu.sicnu.cs.pojo.EmployeeTodayDetail;
 import cn.edu.sicnu.cs.utils.CheckInMsg;
 import cn.edu.sicnu.cs.utils.CheckOutMsg;
 
@@ -70,10 +71,10 @@ public interface AttendanceDetailService {
 
     /**
      * 查询某员工今日的打卡信息
-     * @param eid
+     * @param
      * @return
      */
-    AttendanceDetail selectTodayByEid(Integer eid);
+    List<EmployeeTodayDetail> selectAllTodayDetail();
 
     /**
      * 查询今日所有员工的打卡信息
@@ -94,5 +95,12 @@ public interface AttendanceDetailService {
      * @return
      */
     CheckOutMsg checkOut(Integer eid);
+
+    /**
+     * 根据员工号更改记录
+     * @param attendanceDetail
+     * @return
+     */
+    int updateByEidAndCreateDate(AttendanceDetail attendanceDetail);
 
 }

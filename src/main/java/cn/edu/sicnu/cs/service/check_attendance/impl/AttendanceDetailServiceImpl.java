@@ -4,6 +4,7 @@ import cn.edu.sicnu.cs.dao.check_attendance.AttendanceDao;
 import cn.edu.sicnu.cs.dao.check_attendance.AttendanceDetailDao;
 import cn.edu.sicnu.cs.pojo.Attendance;
 import cn.edu.sicnu.cs.pojo.AttendanceDetail;
+import cn.edu.sicnu.cs.pojo.EmployeeTodayDetail;
 import cn.edu.sicnu.cs.service.check_attendance.AttendanceDetailService;
 import cn.edu.sicnu.cs.utils.AttendanceInstances;
 import cn.edu.sicnu.cs.utils.CheckInMsg;
@@ -206,9 +207,9 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
     }
 
     @Override
-    public AttendanceDetail selectTodayByEid(Integer eid) {
-        AttendanceDetail attendanceDetail = attendanceDetailDao.selectTodayByEid(eid);
-        return attendanceDetail;
+    public List<EmployeeTodayDetail> selectAllTodayDetail() {
+        List<EmployeeTodayDetail> employeeTodayDetails = attendanceDetailDao.selectAllTodayDetail();
+        return employeeTodayDetails;
     }
 
     @Override
@@ -217,4 +218,8 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
         return details;
     }
 
+    @Override
+    public int updateByEidAndCreateDate(AttendanceDetail attendanceDetail) {
+        return attendanceDetailDao.updateByEidAndCreateDate(attendanceDetail);
+    }
 }

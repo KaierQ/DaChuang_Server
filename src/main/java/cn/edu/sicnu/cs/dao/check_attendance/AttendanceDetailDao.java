@@ -1,6 +1,7 @@
 package cn.edu.sicnu.cs.dao.check_attendance;
 
 import cn.edu.sicnu.cs.pojo.AttendanceDetail;
+import cn.edu.sicnu.cs.pojo.EmployeeTodayDetail;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -36,11 +37,18 @@ public interface AttendanceDetailDao {
     AttendanceDetail selectByPrimaryKey(Integer id);
 
     /**
-     * 根据员工id号查找
-     * @param eid
+     * 查询今日员工打卡的详情
+     * @param
      * @return
      */
-    AttendanceDetail selectTodayByEid(Integer eid);
+    List<EmployeeTodayDetail> selectAllTodayDetail();
+
+    /**
+     * 根据员工号查找
+     * @param eId
+     * @return
+     */
+    AttendanceDetail selectTodayByEid(Integer eId);
 
     /**
      * 查询今日所有员工打卡信息
@@ -83,5 +91,12 @@ public interface AttendanceDetailDao {
      * @return
      */
     int updateLeftTimeByEid(Integer eid);
+
+    /**
+     * 根据员工号更改记录
+     * @param attendanceDetail
+     * @return
+     */
+    int updateByEidAndCreateDate(AttendanceDetail attendanceDetail);
 
 }

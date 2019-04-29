@@ -34,21 +34,6 @@
         </div>
     </c:forEach>
 
-    <div class="employee">
-        <div style="float:left">
-            <img src="../images/employee/person.jpg" class="person_img">
-        </div>
-        <div style="float:left">
-            <ul class="info">
-                <li>工号:10001</li>
-                <li>姓名:邱凯</li>
-                <li>职位:总经理</li>
-                <li>部门:技术部</li>
-                <li>工资:￥8888/月</li>
-                <li>入职时间:2019-4-20</li>
-            </ul>
-        </div>
-    </div>
 </div>
 </body>
 </html>

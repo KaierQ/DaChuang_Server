@@ -42,12 +42,12 @@
             </a>
         </li>
         <li>
-            <a href="game/list_1.html">
+            <a href="/final_project/attendanceDetail/getAllToday?cid=${cid}">
                 <i class="u-icon-nav u-icon-nav-3"></i>今日考勤
             </a>
         </li>
         <li>
-            <a href="game/list_1.html" target="_blank">
+            <a href="/final_project/attendanceDetail/getEmployeeTodayDetail?cid=${cid}" target="_blank">
                 <i class="u-icon-nav u-icon-nav-4"></i>考勤详情
             </a>
         </li>

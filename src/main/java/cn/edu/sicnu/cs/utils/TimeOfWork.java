@@ -14,7 +14,7 @@ public class TimeOfWork {
     /**
      * 下班时间
      */
-    public static final int TIME_STOP_WORK = 15;
+    public static final int TIME_STOP_WORK = 17;
 
     /**
      * 上班之前(00:00~TIME_START_WORK之间)

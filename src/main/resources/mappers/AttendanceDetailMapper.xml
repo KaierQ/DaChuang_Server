@@ -29,6 +29,15 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 
+  <update id="updateByEidAndCreateDate" parameterType="cn.edu.sicnu.cs.pojo.AttendanceDetail" >
+    update attendance_detail
+    <trim prefix="set" suffixOverrides=",">
+      <if test="arriveTime!=null">arrive_time = #{arriveTime,jdbcType=TIMESTAMP},</if>
+      <if test="leftTime!=null">left_time = #{leftTime,jdbcType=TIMESTAMP},</if>
+    </trim>
+    where e_id = #{eId,jdbcType=INTEGER} and created_date = #{createdDate,jdbcType=DATE};
+  </update>
+
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select id, e_id, created_date, arrive_time, left_time
     from attendance_detail
@@ -41,24 +50,42 @@
   </select>
 
   <update id="updateLeftTimeByEid" parameterType="java.lang.Integer">
-    update attendance_detail set left_time = now() where e_id=#{eid} and created_date=now();
+    update attendance_detail set left_time = now() where e_id=#{eid} and created_date=CURRENT_DATE();
   </update>
+
 
   <select id="selectRecentAttendanceDatail" resultMap="BaseResultMap">
     select id, e_id, created_date, arrive_time, left_time
     from attendance_detail where e_id = #{eid} and created_date >= #{date};
   </select>
 
-  <select id="selectTodayByEid" resultMap="BaseResultMap">
-    select * from attendance_detail where e_id = #{eid} and created_date = now();
+  <resultMap id="employeeTodayDetail" type="cn.edu.sicnu.cs.pojo.EmployeeTodayDetail">
+    <result column="id" property="eId" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="arrive_time" property="arriveTime" jdbcType="TIMESTAMP" />
+    <result column="left_time" property="leftTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+
+  <select id="selectAllTodayDetail" resultMap="employeeTodayDetail">
+
+    select e.id,e.name,e.title,a.arrive_time,a.left_time
+    from employee e
+    left join attendance_detail a
+    on created_date = CURRENT_DATE() and e.id = a.e_id;
+
   </select>
 
   <select id="selectAllByEid" resultType="attendanceDetail">
       select * from attendance_detail where e_id = #{eid}
   </select>
 
-  <select id="selectAllToday" resultType="attendanceDetail">
-    select * from attendance_detail where created_date = now();
+  <select id="selectAllToday" resultMap="BaseResultMap">
+    select * from attendance_detail where created_date = CURRENT_DATE();
+  </select>
+
+  <select id="selectTodayByEid" resultType="attendanceDetail">
+    select * from attendance_detail where e_id = #{eId} and created_date = CURRENT_DATE();
   </select>
 
 </mapper>
