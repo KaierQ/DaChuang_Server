@@ -45,4 +45,10 @@ public interface EmployeeDao {
      */
     int updateByPrimaryKey(Employee record);
 
+
+    /**
+     * 获取企业的人数
+     * @return
+     */
+    int selectNumberOfPersonnel();
 }

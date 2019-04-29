@@ -48,4 +48,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         return employeeDao.updateByPrimaryKey(record);
     }
 
+    @Override
+    public int selectNumberOfPersonnel() {
+        return employeeDao.selectNumberOfPersonnel();
+    }
+
 }

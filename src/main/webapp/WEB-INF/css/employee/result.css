@@ -6,7 +6,8 @@ body{
     width:400px; 
     height:fit-content; 
     /* border:1px solid #F00 */
-} 
+}
+
 .employee{
     /* margin-top: 50px auto;
     width:400px; 
@@ -18,13 +19,15 @@ body{
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
+    background-color: moccasin;
     border:1px solid black
 }
-.person_img{
-    width: 100px;
-    height: 100px;
+
+.employee img{
+    width: 400px;
+    height: 300px;
 }
 
-.info{
-    text-align: left;
-}
+
+
+

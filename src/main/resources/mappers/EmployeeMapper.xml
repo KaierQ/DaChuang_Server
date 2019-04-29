@@ -50,4 +50,8 @@
     from employee
   </select>
 
+  <select id="selectNumberOfPersonnel" resultType="int">
+    select count(*) from employee;
+  </select>
+
 </mapper>

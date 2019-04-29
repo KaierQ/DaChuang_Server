@@ -32,12 +32,12 @@
 <div class="m-icon-nav f-cb">
     <div>
         <li>
-            <a href="/employee/selectAll?cid=${cid}">
+            <a href="/final_project/employee/selectAll?cid=${cid}">
                 <i class="u-icon-nav u-icon-nav-1"></i>我的员工
             </a>
         </li>
         <li>
-            <a href="/employee/selectAll?cid=${cid}">
+            <a href="/final_project/employee/update_homepage?cid=${cid}">
                 <i class="u-icon-nav u-icon-nav-2"></i>更新员工
             </a>
         </li>

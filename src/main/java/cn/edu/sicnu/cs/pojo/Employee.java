@@ -2,6 +2,7 @@ package cn.edu.sicnu.cs.pojo;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -24,6 +25,15 @@ public class Employee implements Serializable {
     private Integer departmentId;
 
     private byte[] image;
+
+    private String date;
+
+    public String getDate() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(signDate);
+        date = calendar.get(Calendar.YEAR)+"-"+(calendar.get(Calendar.MONTH)+1)+"-"+calendar.get(Calendar.DAY_OF_MONTH);
+        return date;
+    }
 
     public Integer getId() {
         return id;
@@ -83,6 +93,7 @@ public class Employee implements Serializable {
 
     @Override
     public String toString() {
+        signDate.getDate();
         return "Employee{" +
                 "id=" + id +
                 ", name='" + name + '\'' +

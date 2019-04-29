@@ -1,0 +1,50 @@
+body{
+    text-align: center
+}
+.profile{
+    margin:0 auto;
+    width: 345px;
+    height:fit-content;
+    /* border:1px solid #F00 */
+}
+
+.employee{
+    /* margin-top: 50px auto;
+    width:400px;
+    height: fit-content;
+    border:1px solid black */
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-color: moccasin;
+    border:1px solid black
+}
+
+.employee ul{
+    text-align: left;
+}
+.employee ul li{
+    list-style: none;
+}
+
+.employee .option{
+    font-size: larger;
+}
+
+.employee .optionDecription font{
+    color: tomato;
+}
+
+.employee .go{
+    margin-left: 50px;
+}
+.employee .go span{
+    font-size: xx-large;
+}
+
+.employee .go span a{
+    text-decoration: none;
+}

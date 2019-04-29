@@ -46,7 +46,7 @@ public interface AttendanceDetailDao {
      * 查询今日所有员工打卡信息
      * @return
      */
-    List<AttendanceDetail> selectToday();
+    List<AttendanceDetail> selectAllToday();
 
     /**
      * 查询某个员工的所有打卡信息

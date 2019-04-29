@@ -1,0 +1,31 @@
+body{
+     text-align: center
+ }
+.profile{
+    margin:0 auto;
+    width:355px;
+    height:fit-content;
+    /* border:1px solid #F00 */
+}
+.fm{
+    width: inherit;
+    background-color: lightsalmon;
+}
+
+
+
+.input_div{
+    margin-bottom: 10px;
+    width:inherit;
+}
+
+.input_div input{
+    width: inherit;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.submit_btn{
+    height: 20px;
+    width:100px;
+}

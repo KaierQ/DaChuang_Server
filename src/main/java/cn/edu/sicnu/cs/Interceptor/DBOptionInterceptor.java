@@ -34,25 +34,31 @@ public class DBOptionInterceptor implements HandlerInterceptor {
     @Qualifier("dataSources")
     private DataSources dataSources;
 
+    private String cid;
+
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         System.out.println("interceptor");
-        String cid = request.getParameter("cid");
-        System.out.println("----------"+cid+"----------");
-        String url = Constances.jdbcDriver+Constances.IP+":"+Constances.dbPort+"/"+cid+"_company?useUnicode=true&amp;characterEncoding=UTF8&amp;useSSL=false";
-        System.out.println(url);
-        xxxCompanyDataSource.setJdbcUrl(url);
-        DataSourceSwitch.setDataSourceType(DataSourceInstances.XXX_COMPANY_DB);
-        StringBuffer requestURL = request.getRequestURL();
-        System.out.println("----------"+requestURL+"----------");
+        String companyId = request.getParameter("cid");
+        this.cid = companyId;
+        if (cid!=null){
+            System.out.println("----------"+cid+"----------");
+            String url = Constances.jdbcDriver+Constances.IP+":"+Constances.dbPort+"/"+cid+"_company?useUnicode=true&amp;characterEncoding=UTF8&amp;useSSL=false";
+            System.out.println(url);
+            xxxCompanyDataSource.setJdbcUrl(url);
+            DataSourceSwitch.setDataSourceType(DataSourceInstances.XXX_COMPANY_DB);
+            StringBuffer requestURL = request.getRequestURL();
+            System.out.println("----------"+requestURL+"----------");
+        }
         return true;
     }
 
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
         System.out.println("postHandle");
-        DataSourceSwitch.clearDataSourceType();
-
+        if(cid!=null){
+            DataSourceSwitch.clearDataSourceType();
+        }
     }
 
     @Override

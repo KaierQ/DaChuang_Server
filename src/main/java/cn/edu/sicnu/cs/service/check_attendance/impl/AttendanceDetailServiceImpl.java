@@ -213,7 +213,7 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
 
     @Override
     public List<AttendanceDetail> selectAllToday() {
-        List<AttendanceDetail> details = attendanceDetailDao.selectToday();
+        List<AttendanceDetail> details = attendanceDetailDao.selectAllToday();
         return details;
     }
 

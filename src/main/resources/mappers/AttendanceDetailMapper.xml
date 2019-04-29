@@ -57,7 +57,7 @@
       select * from attendance_detail where e_id = #{eid}
   </select>
 
-  <select id="selectToday" resultType="attendanceDetail">
+  <select id="selectAllToday" resultType="attendanceDetail">
     select * from attendance_detail where created_date = now();
   </select>
 
