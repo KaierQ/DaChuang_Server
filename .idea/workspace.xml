@@ -7,8 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="442f6763-8005-4e4f-a80a-bb3d0c9267f1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/check/before_work.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/check/before_work.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/check/employees_today_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/check/employees_today_detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/applicationContext.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,11 +62,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="before_work.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/check/before_work.css">
+      <file leaf-file-name="AttendanceDetailController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+            <state relative-caret-position="1632">
+              <caret line="84" column="40" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete_detail.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/delete_detail.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1128">
+              <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analogy_all_today.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/analogy_all_today.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="233" column="29" lean-forward="true" selection-start-line="233" selection-start-column="29" selection-end-line="233" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -73,7 +100,7 @@
       <file leaf-file-name="before_work.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/before_work.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="600">
               <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
             </state>
           </provider>
@@ -109,9 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/Constances.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/HomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/company/CompanyDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/company/CompanyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/company/impl/CompanyServiceImpl.java" />
@@ -146,20 +170,23 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/Interceptor/DBOptionInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/before_work.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/CheckResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/AttendanceDetailTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/TimeOfWork.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/homepage/homepage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/EmployeeTodayDetail.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/AttendanceDetailService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/AttendanceDetailDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceDetailServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/AttendanceDetailMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/employees_today_detail.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/employee.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/check/employees_today_detail.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/check/before_work.css" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/DataAnalogyOfCheckIn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/DataAnalogyCheckOut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/AttendanceDetailTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/analogy_all_today.jsp" />
       </list>
     </option>
   </component>
@@ -208,7 +235,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -221,7 +248,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,6 +280,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="check_attendance" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
@@ -299,6 +344,15 @@
               <item name="final_project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -308,14 +362,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mappers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
@@ -379,6 +425,15 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
               <item name="check" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
@@ -413,8 +468,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -428,19 +484,19 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\images\check" />
-      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\images\employee" />
-      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\css\employee" />
-      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\pages\homepage" />
-      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\css\homepage" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF" />
       <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp" />
       <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\pages\images\homepage" />
       <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\pages\images" />
       <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\pages\css\homepage" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\js" />
+      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\images\check" />
+      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\images\employee" />
+      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\css\employee" />
+      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\pages\homepage" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -694,8 +750,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AttendanceDetailTest.testUpdateLeftTime" />
         <item itemvalue="JUnit.AttendanceDetailTest.testInsert" />
+        <item itemvalue="JUnit.AttendanceDetailTest.testUpdateLeftTime" />
         <item itemvalue="JUnit.EmployeeTest.testInsert" />
         <item itemvalue="JUnit.AttendanceTest.testAttendanceUpdate" />
         <item itemvalue="JUnit.AttendanceDetailTest.testFindRecent" />
@@ -726,20 +782,13 @@
       <workItem from="1556351675375" duration="13058000" />
       <workItem from="1556438822263" duration="16024000" />
       <workItem from="1556502678573" duration="11546000" />
-      <workItem from="1556517894757" duration="8609000" />
+      <workItem from="1556517894757" duration="9269000" />
+      <workItem from="1556591975351" duration="7645000" />
+      <workItem from="1556858425914" duration="219000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EmployeeTest_testInsert - 2019.04.24 at 21h 59m 09s.xml">
-      <configuration name="EmployeeTest.testInsert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeTest_testInsert - 2019.04.24 at 22h 00m 02s.xml">
-      <configuration name="EmployeeTest.testInsert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeTest_testInsert - 2019.04.24 at 22h 00m 41s.xml">
-      <configuration name="EmployeeTest.testInsert" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AttendanceDetailTest_testInsert - 2019.04.29 at 12h 02m 01s.xml">
       <configuration name="AttendanceDetailTest.testInsert" configurationId="JUnit" />
     </history-entry>
@@ -761,9 +810,18 @@
     <history-entry file="AttendanceDetailTest_testUpdateLeftTime - 2019.04.29 at 14h 06m 07s.xml">
       <configuration name="AttendanceDetailTest.testUpdateLeftTime" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AttendanceDetailTest_testInsert - 2019.04.30 at 13h 11m 18s.xml">
+      <configuration name="AttendanceDetailTest.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AttendanceDetailTest_testInsert - 2019.04.30 at 13h 12m 05s.xml">
+      <configuration name="AttendanceDetailTest.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AttendanceDetailTest_testInsert - 2019.04.30 at 13h 12m 41s.xml">
+      <configuration name="AttendanceDetailTest.testInsert" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171897000" />
+    <option name="totallyTimeSpent" value="180202000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -792,16 +850,15 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3960396" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.36633664" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44569817" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.48942173" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49621212" visible="true" weight="0.2141901" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49621212" visible="true" weight="0.17402945" />
       <window_info id="Web" order="2" sideWeight="0.5043668" side_tool="true" weight="0.08099063" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" sideWeight="0.5037879" side_tool="true" weight="0.12650603" />
@@ -810,18 +867,17 @@
       <window_info anchor="bottom" id="Database Console" order="9" weight="0.28672317" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281471" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.36633664" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Application Servers" order="15" weight="0.33050847" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Database Console" order="16" weight="0.28672317" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17348377" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info id="Image Layers" order="3" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.28672317" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17348377" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -829,15 +885,17 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.36633664" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Tail" order="14" />
+      <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.08512064" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3281471" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49621212" visible="true" weight="0.12650603" />
       <window_info anchor="right" id="Database" order="6" weight="0.04088472" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -846,7 +904,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.19638069" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Tail" order="14" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3281471" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3960396" />
     </layout-to-restore>
   </component>
@@ -866,83 +924,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/register_company/registerCompany.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="85" column="35" lean-forward="true" selection-start-line="85" selection-start-column="35" selection-end-line="85" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/jquery.bxslider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="1342" column="11" lean-forward="true" selection-start-line="1342" selection-start-column="11" selection-end-line="1342" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="804" column="11" selection-start-line="804" selection-start-column="11" selection-end-line="804" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/employee/update_detail.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/update_detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/delete_detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="41" column="98" selection-start-line="41" selection-start-column="98" selection-end-line="41" selection-end-column="98" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.0.2.RELEASE/spring-web-5.0.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/AttendanceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="41" column="20" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttencedanceController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -975,9 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1722">
           <caret line="98" column="33" lean-forward="true" selection-start-line="98" selection-start-column="33" selection-end-line="98" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1012,13 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/AttendanceDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="21" lean-forward="true" selection-start-line="12" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -1071,24 +1042,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/CheckResult.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/AttendanceDetailTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2064">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/TimeOfWork.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-16">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -1124,9 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1164,16 +1118,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/employee/employees.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/employee.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
@@ -1200,17 +1144,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/AttendanceDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/Attendance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/DataAnalogyOfCheckIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="104" column="18" lean-forward="true" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/DataAnalogyCheckOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="82" column="7" lean-forward="true" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/ajax.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/check/before_work.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/AttendanceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/CompanyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/AttendanceDetailTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/delete_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/before_work.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="600">
           <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/check/before_work.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        <state relative-caret-position="1632">
+          <caret line="84" column="40" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/SpringMVC.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/analogy_all_today.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="233" column="29" lean-forward="true" selection-start-line="233" selection-start-column="29" selection-end-line="233" selection-end-column="29" />
         </state>
       </provider>
     </entry>
