@@ -45,4 +45,9 @@ public class DepartmentServiceImpl implements DepartmentService {
         return departmentDao.updateByPrimaryKey(record);
     }
 
+    @Override
+    public Department selectByName(String name) {
+        return departmentDao.selectByName(name);
+    }
+
 }

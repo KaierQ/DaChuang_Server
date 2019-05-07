@@ -14,6 +14,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -60,13 +62,15 @@ public class AttendanceDetailController {
         int numOfLate = checkInAnalogy.getNumOfLate();
         //统计未到人数
         int numOfNoArrive = numberOfPersonnel-details.size();
+
         model.addAttribute("checkInAnalogy",checkInAnalogy);
         model.addAttribute("numberOfPersonnel",numberOfPersonnel);
         model.addAttribute("numOfNoArrive",numOfNoArrive);
         model.addAttribute("numOfLate",numOfLate);
         System.out.println("总人数:"+numberOfPersonnel+" 迟到人数:"+numOfLate+" 未到人数:"+numOfNoArrive);
 
-        if (typeOfWorkTime==TimeOfWork.AFTER_WORK){
+//        if (typeOfWorkTime==TimeOfWork.AFTER_WORK){
+        if(true){
             //如果是下班时间到24:00之前
             //统计下班打卡合格的人数
             DataAnalogyCheckOut dataAnalogyCheckOut = getNumOfCheckout(details);
@@ -151,8 +155,115 @@ public class AttendanceDetailController {
         for (EmployeeTodayDetail employeeTodayDetail : employeeTodayDetails) {
             System.out.println(employeeTodayDetail);
         }
+        model.addAttribute("cid",cid);
         model.addAttribute("employeeTodayDetails",employeeTodayDetails);
         return "check/employees_today_detail";
+    }
+
+    @RequestMapping("/getCertainEmployeeDetail")
+    public String getCertainEmployeeDetail(@RequestParam(value = "cid")String cid,@RequestParam(value = "eId")String eId,Model model){
+        System.out.println(cid+" "+eId);
+        List<AttendanceDetail> details = attendanceDetailService.selectAllByEid(Integer.valueOf(eId));
+
+        int numOfLate = 0;
+        int numOfNoArrive = 0;
+        int numOfEarlyLeave = 0;
+        int numOfNoCheckOut = 0;
+        int publicData = 0;
+        boolean late=false;
+        boolean earlyLeave=false;
+        Calendar calendar = Calendar.getInstance();
+        for (AttendanceDetail detail : details) {
+            late=false;
+            earlyLeave=false;
+            System.out.println(detail);
+            Date arriveTime = detail.getArriveTime();
+            if(arriveTime!=null){
+                //获取时间
+                calendar.setTime(arriveTime);
+                int hour = calendar.get(Calendar.HOUR_OF_DAY);
+                int minute = calendar.get(Calendar.MINUTE);
+                int second = calendar.get(Calendar.SECOND);
+                if(hour==TimeOfWork.TIME_START_WORK&&minute!=0&&second!=0){
+                    numOfLate++;
+                    late = true;
+                }else if(hour>TimeOfWork.TIME_START_WORK){
+                    numOfLate++;
+                    late = true;
+                }
+            }else{
+                //如果没有打卡就认为未到旷工
+                numOfNoArrive++;
+            }
+            Date leftTime = detail.getLeftTime();
+            if(leftTime!=null){
+                calendar.setTime(leftTime);
+                int hour = calendar.get(Calendar.HOUR_OF_DAY);
+                if(hour<TimeOfWork.TIME_STOP_WORK){
+                    numOfEarlyLeave++;
+                    earlyLeave = true;
+                }
+            }else{
+                numOfNoCheckOut++;
+                earlyLeave = true;
+            }
+            if(late==true&&earlyLeave==true){
+                publicData++;
+            }
+        }
+        int size = details.size();
+        model.addAttribute("normalCheckIn",size-numOfLate-numOfNoArrive);
+        model.addAttribute("normalCheckOut",size-numOfEarlyLeave-numOfNoCheckOut);
+        model.addAttribute("numOfLate",numOfLate);
+        model.addAttribute("numOfNoArrive",numOfNoArrive);
+        model.addAttribute("numOfEarlyLeave",numOfEarlyLeave);
+        model.addAttribute("numOfNoCheckOut",numOfNoCheckOut);
+        model.addAttribute("publicData",publicData);
+        model.addAttribute("details",details);
+
+        return "check/certain_detail";
+    }
+
+    @RequestMapping("/checkIn")
+    private String checkIn(@RequestParam(value = "eId")String eId
+            , @RequestParam(value = "arriveTime")String arriveTime, HttpServletResponse response) throws IOException {
+
+        response.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
+
+        AttendanceDetail attendanceDetail = new AttendanceDetail();
+        attendanceDetail.seteId(Integer.valueOf(eId));
+        attendanceDetail.setArriveTime(new Date(arriveTime));
+        int ret = attendanceDetailService.insert(attendanceDetail);
+
+        if(ret<1){
+            response.getWriter().print("false");
+        }else{
+
+        }
+        response.getWriter().close();
+        return "";
+    }
+
+    @RequestMapping("/checkOut")
+    private String checkOut(@RequestParam(value = "eId")String eId
+            ,@RequestParam(value = "leftTime")String leftTime,HttpServletResponse response) throws IOException {
+
+        response.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
+
+        AttendanceDetail attendanceDetail = new AttendanceDetail();
+        attendanceDetail.seteId(Integer.valueOf(eId));
+        attendanceDetail.setLeftTime(new Date(leftTime));
+
+        int ret = attendanceDetailService.updateLeftTimeByEid(Integer.valueOf(eId));
+        if (ret<1){
+            response.getWriter().print("false");
+        }else{
+
+        }
+        response.getWriter().close();
+        return "";
     }
 
 }

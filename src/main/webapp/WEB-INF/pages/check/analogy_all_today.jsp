@@ -19,9 +19,15 @@
 <div id="title" style="text-align:center">
     <h3>今日打卡一览表</h3>
 </div>
+<div>
+    <h4>总人数:${numberOfPersonnel} &nbsp;&nbsp;&nbsp;迟到人数:${numOfLate} &nbsp;&nbsp;&nbsp;未到人数:${numOfNoArrive}</h4>
+</div>
 <div id="checkInbar" style="height:500px;border:1px solid #ccc;padding:10px;"></div>
 <div id="checkInPie" style="height:500px;border:1px solid #ccc;padding:10px;"></div>
 <c:if test="${checkOut!=null}">
+    <div>
+        <h4>总人数:${numberOfPersonnel} &nbsp;&nbsp;&nbsp;早退人数或没有打卡人数:${numOfBadCheckout}</h4>
+    </div>
     <div id="checkOutbar" style="height:500px;border:1px solid #ccc;padding:10px;"></div>
     <div id="checkOutPie" style="height:500px;border:1px solid #ccc;padding:10px;"></div>
 </c:if>

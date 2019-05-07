@@ -1,14 +1,10 @@
 package cn.edu.sicnu.cs.pojo;
 
-import java.io.Serializable;
-
 /**
- * 部门信息实体
+ * 职能部门信息实体类
  * @author Kaier
  */
-public class Department implements Serializable {
-    private static final long serialVersionUID = 5314558113645285657L;
-
+public class Department {
     private Integer id;
 
     private String name;

@@ -13,8 +13,11 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="cn.edu.sicnu.cs.pojo.AttendanceDetail" >
-    insert into attendance_detail (id, e_id, created_date, 
-      arrive_time, left_time)
+    insert into attendance_detail (
+    id,
+    e_id,
+    created_date,
+    arrive_time, left_time)
     values (#{id,jdbcType=INTEGER}, #{eId,jdbcType=INTEGER}, #{createdDate,jdbcType=DATE}, 
       #{arriveTime,jdbcType=TIMESTAMP}, #{leftTime,jdbcType=TIMESTAMP})
   </insert>
@@ -76,7 +79,7 @@
 
   </select>
 
-  <select id="selectAllByEid" resultType="attendanceDetail">
+  <select id="selectAllByEid" resultMap="BaseResultMap">
       select * from attendance_detail where e_id = #{eid}
   </select>
 
@@ -84,7 +87,7 @@
     select * from attendance_detail where created_date = CURRENT_DATE();
   </select>
 
-  <select id="selectTodayByEid" resultType="attendanceDetail">
+  <select id="selectTodayByEid" resultMap="BaseResultMap">
     select * from attendance_detail where e_id = #{eId} and created_date = CURRENT_DATE();
   </select>
 

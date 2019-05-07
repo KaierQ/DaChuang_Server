@@ -1,6 +1,7 @@
 package cn.edu.sicnu.cs.pojo;
 
 import java.io.Serializable;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -36,8 +37,11 @@ public class AttendanceDetail implements Serializable {
         this.eId = eId;
     }
 
-    public Date getCreatedDate() {
-        return createdDate;
+    public String getCreatedDate() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(createdDate);
+        String date = calendar.get(Calendar.YEAR)+"-"+(calendar.get(Calendar.MONTH)+1)+"-"+calendar.get(Calendar.DAY_OF_MONTH);
+        return date;
     }
 
     public void setCreatedDate(Date createdDate) {

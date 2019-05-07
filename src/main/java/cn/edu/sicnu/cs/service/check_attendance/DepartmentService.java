@@ -43,4 +43,11 @@ public interface DepartmentService {
      */
     int updateByPrimaryKey(Department record);
 
+    /**
+     * 查找
+     * @param name
+     * @return
+     */
+    Department selectByName(String name);
+
 }

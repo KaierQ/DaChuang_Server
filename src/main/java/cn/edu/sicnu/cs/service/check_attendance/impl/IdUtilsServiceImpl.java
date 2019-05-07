@@ -13,7 +13,7 @@ import java.util.List;
  * @author kaier
  * @date 2019-04-22 19:17
  */
-@Service("idUtilsServiceImpl")
+@Service("idUtilsService")
 public class IdUtilsServiceImpl implements IdUtilsService {
     @Autowired
     @Qualifier("idUtilsDao")

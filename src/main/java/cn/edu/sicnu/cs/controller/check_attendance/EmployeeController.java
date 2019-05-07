@@ -1,7 +1,11 @@
 package cn.edu.sicnu.cs.controller.check_attendance;
 
+import cn.edu.sicnu.cs.pojo.Department;
 import cn.edu.sicnu.cs.pojo.Employee;
+import cn.edu.sicnu.cs.pojo.IdUtils;
+import cn.edu.sicnu.cs.service.check_attendance.DepartmentService;
 import cn.edu.sicnu.cs.service.check_attendance.EmployeeService;
+import cn.edu.sicnu.cs.service.check_attendance.IdUtilsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -27,6 +31,14 @@ public class EmployeeController {
     @Autowired
     @Qualifier("employeeService")
     private EmployeeService employeeService;
+
+    @Autowired
+    @Qualifier("idUtilsService")
+    private IdUtilsService idUtilsService;
+
+    @Autowired
+    @Qualifier("departmentService")
+    private DepartmentService departmentService;
 
     @RequestMapping("/selectAll")
     public String selectAll(@RequestParam(value="cid") String cid,Model model){
@@ -97,6 +109,39 @@ public class EmployeeController {
             model.addAttribute("info","您的网络出错或已经被删除,删除失败!");
         }
         return "employee/result";
+    }
+
+    @RequestMapping("/addEmployee")
+    public void addEmployee(
+            @RequestParam(value = "name")String name,
+            @RequestParam(value = "title")String title,
+            @RequestParam(value = "salary")String salary,
+            @RequestParam(value = "department")String departmentName,HttpServletResponse response) throws IOException {
+
+        response.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
+
+        //为员工生成id号
+        IdUtils id = new IdUtils();
+        idUtilsService.insert(id);
+        //获取部门的id
+        Department department = departmentService.selectByName(departmentName);
+        department.setPersonnelNum(department.getPersonnelNum()+1);
+
+        Employee employee = new Employee();
+        employee.setId(id.getId());
+        employee.setName(name);
+        employee.setTitle(title);
+        employee.setSalary(new BigDecimal(salary));
+        employee.setDepartmentId(department.getId());
+
+        int ret = employeeService.insert(employee);
+        if (ret<1){
+            //错误提示
+            response.getWriter().print("false");
+        }
+
+        response.getWriter().close();
     }
 
 }
