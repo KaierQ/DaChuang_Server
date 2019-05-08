@@ -9,7 +9,20 @@
     <list default="true" id="442f6763-8005-4e4f-a80a-bb3d0c9267f1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/Interceptor/DBOptionInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/Interceptor/DBOptionInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/EmployeeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/AttendanceDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/AttendanceDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/ResultUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/ResultUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/SpringMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/SpringMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/analogy_all_today.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/analogy_all_today.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/certain_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/certain_detail.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,11 +75,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EmployeeController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmployeeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/EmployeeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="149" column="40" lean-forward="true" selection-start-line="149" selection-start-column="40" selection-end-line="149" selection-end-column="40" />
+            <state relative-caret-position="256">
+              <caret line="192" column="33" selection-start-line="192" selection-start-column="33" selection-end-line="192" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExcelUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/ExcelUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="43" column="40" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SalaryController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/SalaryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="60" column="94" selection-start-line="60" selection-start-column="94" selection-end-line="60" selection-end-column="94" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompanyController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/company/CompanyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringMVC.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/SpringMVC.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -101,11 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/employee/employees.css" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/Employee.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/employee/update_employee.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/employee/update_delete.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/update_employee.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/company/CompanyController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/employee/update_detail.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/result.jsp" />
@@ -113,31 +175,20 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/delete_detail.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/employee/delete_detail.css" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttencedanceController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/EmployeeDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mappers/EmployeeMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/EmployeeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/EmployeeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/check/before_wrok.css" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/Interceptor/DBOptionInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/before_work.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/CheckResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/TimeOfWork.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/homepage/homepage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/EmployeeTodayDetail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/AttendanceDetailService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/AttendanceDetailDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceDetailServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/employee.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/check/employees_today_detail.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/check/before_work.css" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/DataAnalogyOfCheckIn.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/DataAnalogyCheckOut.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/analogy_all_today.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/AttendanceDetailTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/employees_today_detail.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/AttendanceDetail.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/certain_detail.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/IdUtilsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/IdUtilsTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
@@ -148,10 +199,26 @@
         <option value="$PROJECT_DIR$/src/main/resources/mappers/DepartmentMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/DepartmentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/AttendanceDetailMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/Interceptor/DBOptionInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/Interceptor/EmployeeInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/EmployeeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/EmployeeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/EmployeeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/EmployeeMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/certain_detail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/analogy_all_today.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/ResultUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/AttendanceDetailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceDetailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/AttendanceDetailTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/ExcelUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/EmployeeController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/SpringMVC.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/SalaryController.java" />
       </list>
     </option>
   </component>
@@ -213,6 +280,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,53 +349,6 @@
               <item name="final_project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="check_attendance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="Interceptor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -337,74 +359,10 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mappers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="check" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="employee" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="register_company" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -724,28 +682,12 @@
       <workItem from="1556971314268" duration="1008000" />
       <workItem from="1557149690294" duration="4627000" />
       <workItem from="1557202124184" duration="13516000" />
+      <workItem from="1557277266988" duration="39505000" />
+      <workItem from="1557339210063" duration="2941000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AttendanceDetailTest_testInsert - 2019.04.30 at 13h 12m 05s.xml">
-      <configuration name="AttendanceDetailTest.testInsert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AttendanceDetailTest_testInsert - 2019.04.30 at 13h 12m 41s.xml">
-      <configuration name="AttendanceDetailTest.testInsert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AttendanceDetailTest_testInsert - 2019.05.03 at 13h 00m 25s.xml">
-      <configuration name="AttendanceDetailTest.testInsert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AttendanceDetailTest_testInsert - 2019.05.03 at 13h 01m 43s.xml">
-      <configuration name="AttendanceDetailTest.testInsert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AttendanceDetailTest_testUpdateLeftTime - 2019.05.03 at 13h 03m 19s.xml">
-      <configuration name="AttendanceDetailTest.testUpdateLeftTime" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AttendanceDetailTest_testInsert - 2019.05.03 at 13h 55m 36s.xml">
-      <configuration name="AttendanceDetailTest.testInsert" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AttendanceDetailTest_testUpdateLeftTime - 2019.05.03 at 13h 56m 09s.xml">
       <configuration name="AttendanceDetailTest.testUpdateLeftTime" configurationId="JUnit" />
     </history-entry>
@@ -758,9 +700,27 @@
     <history-entry file="AttendanceDetailTest_testUpdateLeftTime - 2019.05.04 at 15h 41m 41s.xml">
       <configuration name="AttendanceDetailTest.testUpdateLeftTime" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AttendanceDetailTest_testInsert - 2019.05.08 at 23h 35m 27s.xml">
+      <configuration name="AttendanceDetailTest.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AttendanceDetailTest_testInsert - 2019.05.08 at 23h 36m 54s.xml">
+      <configuration name="AttendanceDetailTest.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AttendanceDetailTest_testInsert - 2019.05.08 at 23h 37m 48s.xml">
+      <configuration name="AttendanceDetailTest.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AttendanceDetailTest_testUpdateLeftTime - 2019.05.08 at 23h 38m 27s.xml">
+      <configuration name="AttendanceDetailTest.testUpdateLeftTime" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AttendanceDetailTest_testInsert - 2019.05.09 at 01h 28m 54s.xml">
+      <configuration name="AttendanceDetailTest.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AttendanceDetailTest_testUpdateLeftTime - 2019.05.09 at 01h 31m 59s.xml">
+      <configuration name="AttendanceDetailTest.testUpdateLeftTime" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217037000" />
+    <option name="totallyTimeSpent" value="259483000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -773,12 +733,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067025" side_tool="true" weight="0.8005658" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32956153" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.1914324" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.19101876" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -787,64 +746,64 @@
       <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.19638069" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3960396" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43281472" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.21923621" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.42008486" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32956153" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.48797736" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.5205092" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32956153" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49305555" visible="true" weight="0.08847185" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4911032" visible="true" weight="0.042895444" />
       <window_info id="Web" order="2" sideWeight="0.5043668" side_tool="true" weight="0.08099063" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3281471" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" sideWeight="0.5069444" side_tool="true" weight="0.16800536" />
+      <window_info id="Favorites" order="2" sideWeight="0.50889677" side_tool="true" weight="0.17225201" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="9" weight="0.28672317" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3281471" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.33050847" />
+      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.32956153" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.12871288" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.28672317" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17348377" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3281471" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" sideWeight="0.5037879" side_tool="true" weight="0.12650603" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Favorites" order="5" sideWeight="0.50889677" side_tool="true" weight="0.17225201" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.36633664" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067025" side_tool="true" weight="0.8005658" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.42008486" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Tail" order="14" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32956153" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.08512064" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49621212" visible="true" weight="0.12650603" />
-      <window_info anchor="right" id="Database" order="6" weight="0.04088472" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32956153" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.19101876" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4911032" visible="true" weight="0.123324394" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.04088472" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="7" sideWeight="0.5043668" side_tool="true" weight="0.08099063" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.19638069" />
-      <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3281471" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3960396" />
+      <window_info anchor="bottom" id="Tail" order="14" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43281472" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -855,7 +814,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="46" />
+      <option name="time" value="61" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -863,147 +822,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/employee/employees.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/check/employees_today_detail.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-452">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/Attendance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/DataAnalogyCheckOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="82" column="7" lean-forward="true" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/ajax.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/check/before_work.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/AttendanceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/CompanyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/delete_detail.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/analogy_all_today.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/EmployeeTodayDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/DataAnalogyOfCheckIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttencedanceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/AttendanceDetailDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/AttendanceDetailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceDetailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9165">
-          <caret line="459" column="21" lean-forward="true" selection-start-line="459" selection-start-column="21" selection-end-line="459" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/employee.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/AttendanceDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/certain_detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5544">
-          <caret line="231" column="7" selection-start-line="231" selection-start-column="7" selection-end-line="231" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/register_company/registerResult.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/IdUtilsService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1061,13 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/DepartmentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/DepartmentDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -1082,20 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/DepartmentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/EmployeeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1107,20 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
           <caret line="110" column="32" lean-forward="true" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/AttendanceDetailMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/AttendanceDetailTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1142,69 +925,269 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/ResultUtil.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.0.2.RELEASE/spring-web-5.0.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="124">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/DepartmentMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+        <state relative-caret-position="416">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/Interceptor/DBOptionInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/Interceptor/EmployeeInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-332">
+          <caret line="51" column="20" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/EmployeeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/EmployeeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/EmployeeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="52" column="34" lean-forward="true" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/EmployeeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/register_company/registerCompany.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/analogy_all_today.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/certain_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/DepartmentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttencedanceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/CheckInMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/AttendanceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/AttendanceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/AttendanceDetailDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="96" column="30" lean-forward="true" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5613">
-          <caret line="256" column="57" lean-forward="true" selection-start-line="256" selection-start-column="57" selection-end-line="256" selection-end-column="57" />
+        <state relative-caret-position="376">
+          <caret line="250" column="89" lean-forward="true" selection-start-line="250" selection-start-column="89" selection-end-line="250" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/ResultUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+        <state relative-caret-position="288">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#134#135#0" expanded="true" />
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/Interceptor/DBOptionInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/AttendanceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        <state relative-caret-position="-258">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/SpringMVC.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/AttendanceMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        <state relative-caret-position="432">
+          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/company/CompanyController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/AttendanceDetailService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1312">
-          <caret line="86" column="26" lean-forward="true" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+        <state relative-caret-position="270">
+          <caret line="103" column="21" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/AttendanceDetailMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceDetailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3936">
+          <caret line="193" selection-start-line="193" selection-end-line="193" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="169" column="13" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/AttendanceDetailTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="103" column="54" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/DataAnalogyCheckOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/poi/poi/3.17/poi-3.17.jar!/org/apache/poi/hssf/usermodel/HSSFCellStyle.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="128" column="48" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/EmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="149" column="40" lean-forward="true" selection-start-line="149" selection-start-column="40" selection-end-line="149" selection-end-column="40" />
+        <state relative-caret-position="256">
+          <caret line="192" column="33" selection-start-line="192" selection-start-column="33" selection-end-line="192" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/ExcelUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="43" column="40" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/SpringMVC.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/company/CompanyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/SalaryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="60" column="94" selection-start-line="60" selection-start-column="94" selection-end-line="60" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

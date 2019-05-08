@@ -46,7 +46,6 @@ public class DBOptionInterceptor implements HandlerInterceptor {
             String url = Constances.jdbcDriver+Constances.IP+":"+Constances.dbPort+"/"+cid+"_company?useUnicode=true&amp;characterEncoding=UTF8&amp;useSSL=false";
             xxxCompanyDataSource.setJdbcUrl(url);
             DataSourceSwitch.setDataSourceType(DataSourceInstances.XXX_COMPANY_DB);
-            StringBuffer requestURL = request.getRequestURL();
         }
         return true;
     }

@@ -28,8 +28,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public int insert(Employee record) {
         int ret = employeeDao.insert(record);
-
-        int i=1/0;
+//        int i=1/0;
         return ret;
     }
 
@@ -51,6 +50,11 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public int selectNumberOfPersonnel() {
         return employeeDao.selectNumberOfPersonnel();
+    }
+
+    @Override
+    public byte[] selectImageByEid(Integer id) {
+        return employeeDao.selectImageByEid(id);
     }
 
 }

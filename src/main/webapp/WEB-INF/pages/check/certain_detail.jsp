@@ -16,9 +16,15 @@
 </head>
 <body>
 <div id="title" style="text-align:center">
-    <h3>此员工近期打卡一览表</h3>
+    <h2>此员工近期打卡一览表</h2>
+</div>
+<div id="head01" style="text-align:center">
+    <h3>近期上班打卡</h3>
 </div>
 <div id="RecentCheckInPie" style="height:500px;border:1px solid #ccc;padding:10px;"></div>
+<div id="head02" style="text-align:center">
+    <h3>近期下班打卡</h3>
+</div>
 <div id="RecentCheckOutPie" style="height:500px;border:1px solid #ccc;padding:10px;"></div>
 <div id="CheckVenn" style="height:500px;border:1px solid #ccc;padding:10px;"></div>
 
@@ -42,8 +48,8 @@
             var myCheckInBar = ec.init(document.getElementById('RecentCheckInPie'));
             myCheckInBar.setOption({
                 title : {
-                    text: '此员工打卡比列',
-                    subtext: '描述上班打卡',
+                    // text: '此员工打卡比列',
+                    // subtext: '描述上班打卡',
                     x:'center'
                 },
                 tooltip : {
@@ -96,8 +102,8 @@
             var myCheckOutBar = ec.init(document.getElementById('RecentCheckOutPie'));
             myCheckOutBar.setOption({
                 title : {
-                    text: '此员工打卡比列',
-                    subtext: '描述下班打卡',
+                    // text: '此员工打卡比列',
+                    // subtext: '描述下班打卡',
                     x:'center'
                 },
                 tooltip : {
@@ -211,18 +217,18 @@
 
 </script>
 
-<div id="details" style="text-align:center;">
-    <table border="3">
+<div id="details" style="text-align:center;border:1px solid #ccc;padding:10px;">
+    <table border="3" style="text-align:center;">
         <tr>
-            <th>日期</th>
-            <th>上班</th>
-            <th>下班</th>
+            <th style="width:70%">日期</th>
+            <th style="width:70%">上班</th>
+            <th style="width:70%">下班</th>
         </tr>
         <c:forEach items="${details}" var="item">
             <tr>
-                <td>${item.createdDate}</td>
-                <td>${item.arriveTime.hours}:${item.arriveTime.minutes}:${item.arriveTime.seconds}</td>
-                <td>${item.leftTime.hours}:${item.leftTime.minutes}:${item.leftTime.seconds}</td>
+                <td style="width:70%">${item.createdDate}</td>
+                <td style="width:70%">${item.arriveTime.hours}:${item.arriveTime.minutes}:${item.arriveTime.seconds}</td>
+                <td style="width:70%">${item.leftTime.hours}:${item.leftTime.minutes}:${item.leftTime.seconds}</td>
             </tr>
         </c:forEach>
 

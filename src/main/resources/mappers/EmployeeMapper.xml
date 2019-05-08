@@ -54,4 +54,9 @@
     select count(*) from employee;
   </select>
 
+  <select id="selectImageByEid" resultType="byte[]">
+    select image from employee where id=#{id};
+  </select>
+
+
 </mapper>

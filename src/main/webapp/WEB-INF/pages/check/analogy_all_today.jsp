@@ -22,11 +22,17 @@
 <div>
     <h4>总人数:${numberOfPersonnel} &nbsp;&nbsp;&nbsp;迟到人数:${numOfLate} &nbsp;&nbsp;&nbsp;未到人数:${numOfNoArrive}</h4>
 </div>
+<div id="head01" style="text-align:center">
+    <h3>今日上班打卡</h3>
+</div>
 <div id="checkInbar" style="height:500px;border:1px solid #ccc;padding:10px;"></div>
 <div id="checkInPie" style="height:500px;border:1px solid #ccc;padding:10px;"></div>
 <c:if test="${checkOut!=null}">
     <div>
         <h4>总人数:${numberOfPersonnel} &nbsp;&nbsp;&nbsp;早退人数或没有打卡人数:${numOfBadCheckout}</h4>
+    </div>
+    <div id="head02" style="text-align:center">
+        <h3>今日下班打卡</h3>
     </div>
     <div id="checkOutbar" style="height:500px;border:1px solid #ccc;padding:10px;"></div>
     <div id="checkOutPie" style="height:500px;border:1px solid #ccc;padding:10px;"></div>
@@ -102,8 +108,8 @@
             var myCheckInPie = ec.init(document.getElementById('checkInPie'));
             myCheckInPie.setOption({
                 title : {
-                    text: '打卡人数比列',
-                    subtext: '描述上班打卡',
+                    // text: '打卡人数比列',
+                    // subtext: '描述上班打卡',
                     x:'center'
                 },
                 tooltip : {
@@ -209,8 +215,8 @@
             var myCheckOutPie = ec.init(document.getElementById('checkOutPie'));
             myCheckOutPie.setOption({
                 title : {
-                    text: '打卡人数比列',
-                    subtext: '描述下班打卡',
+                    // text: '打卡人数比列',
+                    // subtext: '描述下班打卡',
                     x:'center'
                 },
                 tooltip : {

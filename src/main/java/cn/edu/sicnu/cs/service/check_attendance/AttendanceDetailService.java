@@ -97,6 +97,13 @@ public interface AttendanceDetailService {
     CheckOutMsg checkOut(Integer eid);
 
     /**
+     *
+     * @param attendanceDetail
+     * @return
+     */
+    CheckOutMsg checkOut(AttendanceDetail attendanceDetail);
+
+    /**
      * 根据员工号更改记录
      * @param attendanceDetail
      * @return

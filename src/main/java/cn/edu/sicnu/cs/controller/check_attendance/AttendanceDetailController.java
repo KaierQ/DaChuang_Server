@@ -4,15 +4,14 @@ import cn.edu.sicnu.cs.pojo.AttendanceDetail;
 import cn.edu.sicnu.cs.pojo.EmployeeTodayDetail;
 import cn.edu.sicnu.cs.service.check_attendance.AttendanceDetailService;
 import cn.edu.sicnu.cs.service.check_attendance.EmployeeService;
-import cn.edu.sicnu.cs.utils.DataAnalogyCheckOut;
-import cn.edu.sicnu.cs.utils.DataAnalogyOfCheckIn;
-import cn.edu.sicnu.cs.utils.TimeOfWork;
+import cn.edu.sicnu.cs.utils.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -225,7 +224,7 @@ public class AttendanceDetailController {
     }
 
     @RequestMapping("/checkIn")
-    private String checkIn(@RequestParam(value = "eId")String eId
+    private @ResponseBody ResultUtil checkIn(@RequestParam(value = "eId")String eId
             , @RequestParam(value = "arriveTime")String arriveTime, HttpServletResponse response) throws IOException {
 
         response.setCharacterEncoding("UTF-8");
@@ -234,36 +233,29 @@ public class AttendanceDetailController {
         AttendanceDetail attendanceDetail = new AttendanceDetail();
         attendanceDetail.seteId(Integer.valueOf(eId));
         attendanceDetail.setArriveTime(new Date(arriveTime));
-        int ret = attendanceDetailService.insert(attendanceDetail);
-
-        if(ret<1){
-            response.getWriter().print("false");
+        CheckInMsg checkInMsg = attendanceDetailService.checkIn(attendanceDetail);
+        //返回json结果字符串
+        if(checkInMsg==CheckInMsg.CHECK_IN_SUCCESS){
+            return new ResultUtil("true");
         }else{
-
+            return new ResultUtil("false");
         }
-        response.getWriter().close();
-        return "";
+
     }
 
     @RequestMapping("/checkOut")
-    private String checkOut(@RequestParam(value = "eId")String eId
-            ,@RequestParam(value = "leftTime")String leftTime,HttpServletResponse response) throws IOException {
-
-        response.setCharacterEncoding("UTF-8");
-        response.setContentType("text/html;charset=UTF-8");
-
-        AttendanceDetail attendanceDetail = new AttendanceDetail();
-        attendanceDetail.seteId(Integer.valueOf(eId));
-        attendanceDetail.setLeftTime(new Date(leftTime));
-
-        int ret = attendanceDetailService.updateLeftTimeByEid(Integer.valueOf(eId));
-        if (ret<1){
-            response.getWriter().print("false");
+    private @ResponseBody ResultUtil checkOut(
+            @RequestParam (value = "cid")String cid,
+            @RequestParam(value = "eId")String eId
+            ,HttpServletResponse response) throws IOException {
+        CheckOutMsg checkOutMsg = attendanceDetailService.checkOut(Integer.valueOf(eId));
+        //返回json结果字符串
+        if(checkOutMsg==CheckOutMsg.CHECK_OUT_SUCCESS){
+            return new ResultUtil("true");
         }else{
+            return new ResultUtil("false");
 
         }
-        response.getWriter().close();
-        return "";
     }
 
 }

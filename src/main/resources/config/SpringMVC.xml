@@ -29,11 +29,18 @@
     <!--设置拦截器-->
     <mvc:interceptors>
         <mvc:interceptor>
+            <mvc:mapping path="/salary/*"/>
             <mvc:mapping path="/employee/*"/>
             <mvc:mapping path="/attendance/*"/>
             <mvc:mapping path="/attendanceDetail/*"/>
             <!--注册拦截器对象-->
             <bean class="cn.edu.sicnu.cs.Interceptor.DBOptionInterceptor"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <!-- 哪些方法进行拦截 -->
+            <mvc:mapping path="/employee/addEmployee"/>
+            <!-- 注册拦截器对象 -->
+            <bean class="cn.edu.sicnu.cs.Interceptor.EmployeeInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
 

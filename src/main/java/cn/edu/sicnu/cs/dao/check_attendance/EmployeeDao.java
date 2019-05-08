@@ -51,4 +51,12 @@ public interface EmployeeDao {
      * @return
      */
     int selectNumberOfPersonnel();
+
+    /**
+     * 获取头像
+     * @param id
+     * @return
+     */
+    byte[] selectImageByEid(Integer id);
+
 }

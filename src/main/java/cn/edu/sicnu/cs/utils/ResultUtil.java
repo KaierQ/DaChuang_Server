@@ -6,6 +6,14 @@ package cn.edu.sicnu.cs.utils;
  */
 public class ResultUtil {
 
+    public ResultUtil() {
+        super();
+    }
+
+    public ResultUtil(String result) {
+        this.result = result;
+    }
+
     private String result;
 
     public void setResult(String result) {

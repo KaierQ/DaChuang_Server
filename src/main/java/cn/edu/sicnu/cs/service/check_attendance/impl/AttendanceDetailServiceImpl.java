@@ -182,6 +182,38 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
         return CheckOutMsg.CHECK_OUT_SUCCESS;
     }
 
+    @Override
+    public CheckOutMsg checkOut(AttendanceDetail attendanceDetail) {
+        //获取员工当天的考勤详细信息
+        int ret = attendanceDetailDao.updateByEidAndCreateDate(attendanceDetail);
+        if (ret < 0){
+            return CheckOutMsg.CHECK_OUT_FAIL;
+        }
+        //获取当前员工统计信息
+        Attendance attendance = attendanceDao.selectByEid(attendanceDetail.geteId());
+
+        if(attendance==null){
+            return CheckOutMsg.CHECK_OUT_FAIL;
+        }
+
+        if(!isEarlyLeft(attendanceDetail.getLeftTime())){
+            //如果没有早退
+            attendance.setLatedLeftdays(attendance.getLatedLeftdays()+1);
+            attendance.setMonthLatedLeftdays(attendance.getMonthLatedLeftdays()+1);
+        }else{
+            //如果有早退
+            attendance.setEarlyLeftdays(attendance.getEarlyLeftdays()+1);
+            attendance.setMonthEarlyLeftdays(attendance.getMonthEarlyLeftdays()+1);
+        }
+        //更新考勤统计信息
+        int retValue = attendanceDao.updateAttendance(attendance);
+        if (retValue<0){
+            return CheckOutMsg.CHECK_OUT_FAIL;
+        }
+
+        return CheckOutMsg.CHECK_OUT_SUCCESS;
+    }
+
     /**
      * 判断是否早退
      * @param date
