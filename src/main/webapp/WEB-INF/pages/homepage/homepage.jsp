@@ -24,10 +24,10 @@
 <!-- ---------------------------------slider7--------------------------------------------- -->
 <!-- <p>slider7(infiniteLoop hideControlOnEnd)</p> -->
 <div class="slider7">
-    <div class="slide"><img src="../../images/homepage/001.jpg"></div>
-    <div class="slide"><img src="../../images/homepage/003.jpg"></div>
-    <div class="slide"><img src="../../images/homepage/002.jpg"></div>
-    <div class="slide"><img src="../../images/homepage/003.jpg"></div>
+    <div class="slide"><a href="../../salary/getUrlPage?cid=${cid}"><img src="../../images/homepage/001.jpg"></a></div>
+    <div class="slide"><a href="../../employee/getNews"><img src="../../images/homepage/003.jpg"></a></div>
+    <div class="slide"><a href="../../attendance/getReport?cid=${cid}"><img src="../../images/homepage/002.jpg"></a></div>
+    <div class="slide"><a><img src="../../images/homepage/003.jpg"></a></div>
 </div>
 <div class="m-icon-nav f-cb">
     <div>

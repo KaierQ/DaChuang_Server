@@ -91,4 +91,8 @@
     select * from attendance_detail where e_id = #{eId} and created_date = CURRENT_DATE();
   </select>
 
+  <select id="selectByDate" resultMap="BaseResultMap" parameterType="java.lang.String">
+    select * from attendance_detail where created_date = #{certainDate};
+  </select>
+
 </mapper>

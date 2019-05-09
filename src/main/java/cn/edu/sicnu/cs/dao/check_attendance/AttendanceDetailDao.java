@@ -79,6 +79,13 @@ public interface AttendanceDetailDao {
     List<AttendanceDetail> selectAll();
 
     /**
+     * 查找某天的所有打卡
+     * @param certainDate
+     * @return
+     */
+    List<AttendanceDetail> selectByDate(String certainDate);
+
+    /**
      * 更改信息
      * @param record
      * @return

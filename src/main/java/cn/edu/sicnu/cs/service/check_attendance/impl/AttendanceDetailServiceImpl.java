@@ -136,7 +136,8 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
      * @param date
      * @return true表示迟到,false反之
      */
-    boolean isLate(Date date){
+    @Override
+    public boolean isLate(Date date){
         Calendar calendar =  Calendar.getInstance();
         calendar.setTime(date);
         //获取小时和分钟
@@ -219,7 +220,8 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
      * @param date
      * @return true就是早退 , false就是未早退
      */
-    boolean isEarlyLeft(Date date){
+    @Override
+    public boolean isEarlyLeft(Date date){
         Calendar calendar =  Calendar.getInstance();
         calendar.setTime(date);
         //获取小时
@@ -248,6 +250,11 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
     public List<AttendanceDetail> selectAllToday() {
         List<AttendanceDetail> details = attendanceDetailDao.selectAllToday();
         return details;
+    }
+
+    @Override
+    public List<AttendanceDetail> selectByDate(String certainDate) {
+        return attendanceDetailDao.selectByDate(certainDate);
     }
 
     @Override

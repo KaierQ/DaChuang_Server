@@ -5,6 +5,7 @@ import cn.edu.sicnu.cs.pojo.EmployeeTodayDetail;
 import cn.edu.sicnu.cs.utils.CheckInMsg;
 import cn.edu.sicnu.cs.utils.CheckOutMsg;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -83,6 +84,14 @@ public interface AttendanceDetailService {
     List<AttendanceDetail> selectAllToday();
 
     /**
+     * 查找某天的所有打卡
+     * @param certainDate
+     * @return
+     */
+    List<AttendanceDetail> selectByDate(String certainDate);
+
+
+    /**
      * 上班打卡开始工作
      * @param attendanceDetail
      * @return
@@ -109,5 +118,19 @@ public interface AttendanceDetailService {
      * @return
      */
     int updateByEidAndCreateDate(AttendanceDetail attendanceDetail);
+
+    /**
+     *
+     * @param date
+     * @return
+     */
+    boolean isLate(Date date);
+
+    /**
+     *
+     * @param date
+     * @return
+     */
+    boolean isEarlyLeft(Date date);
 
 }
