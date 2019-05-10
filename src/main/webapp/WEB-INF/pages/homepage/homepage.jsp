@@ -27,22 +27,22 @@
     <div class="slide"><a href="../../salary/getUrlPage?cid=${cid}"><img src="../../images/homepage/001.jpg"></a></div>
     <div class="slide"><a href="../../employee/getNews"><img src="../../images/homepage/003.jpg"></a></div>
     <div class="slide"><a href="../../attendance/getReport?cid=${cid}"><img src="../../images/homepage/002.jpg"></a></div>
-    <div class="slide"><a><img src="../../images/homepage/003.jpg"></a></div>
+    <div class="slide"><a href="../../employee/getNews"><img src="../../images/homepage/003.jpg"></a></div>
 </div>
 <div class="m-icon-nav f-cb">
     <div>
         <li>
-            <a href="/final_project/employee/selectAll?cid=${cid}">
+            <a href="/final_project/employee/selectAll?cid=${cid}" target="_blank">
                 <i class="u-icon-nav u-icon-nav-1"></i>我的员工
             </a>
         </li>
         <li>
-            <a href="/final_project/employee/update_homepage?cid=${cid}">
+            <a href="/final_project/employee/update_homepage?cid=${cid}" target="_blank">
                 <i class="u-icon-nav u-icon-nav-2"></i>更新员工
             </a>
         </li>
         <li>
-            <a href="/final_project/attendanceDetail/getAllToday?cid=${cid}">
+            <a href="/final_project/attendanceDetail/getAllToday?cid=${cid}" target="_blank">
                 <i class="u-icon-nav u-icon-nav-3"></i>今日考勤
             </a>
         </li>
@@ -52,34 +52,34 @@
             </a>
         </li>
         <li>
-            <a href="game/list_1.html" target="_blank">
+            <a href="/final_project/terminal/terminal?cid=${cid}" target="_blank">
                 <i class="u-icon-nav u-icon-nav-5"></i>考勤终端
             </a>
         </li>
     </div>
     <div>
         <li>
-            <a href="game/list_1.html" target="_blank">
+            <a href="/final_project/terminal/terminal?cid=${cid}" target="_blank">
                 <i class="u-icon-nav u-icon-nav-6"></i>职能部门
             </a>
         </li>
         <li>
-            <a href="game/list_1.html" target="_blank">
+            <a href="/final_project/terminal/terminal?cid=${cid}" target="_blank">
                 <i class="u-icon-nav u-icon-nav-7"></i>实时监控
             </a>
         </li>
         <li>
-            <a href="game/list_1.html" target="_blank">
+            <a href="/final_project/terminal/terminal?cid=${cid}" target="_blank">
                 <i class="u-icon-nav u-icon-nav-8"></i>智能感知
             </a>
         </li>
         <li>
-            <a href="game/list_1.html" target="_blank">
+            <a href="/final_project/terminal/terminal?cid=${cid}" target="_blank">
                 <i class="u-icon-nav u-icon-nav-9"></i>发布通知
             </a>
         </li>
         <li>
-            <a href="game/list_1.html" target="_blank">
+            <a href="/final_project/terminal/terminal?cid=${cid}" target="_blank">
                 <i class="u-icon-nav u-icon-nav-10"></i>备忘录
             </a>
         </li>

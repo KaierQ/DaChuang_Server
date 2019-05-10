@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -224,29 +227,56 @@ public class AttendanceDetailController {
     }
 
     @RequestMapping("/checkIn")
-    private @ResponseBody ResultUtil checkIn(@RequestParam(value = "eId")String eId
-            , @RequestParam(value = "arriveTime")String arriveTime, HttpServletResponse response) throws IOException {
+    private @ResponseBody ResultUtil checkIn(
+             @RequestParam(value = "cid")String cid
+            ,@RequestParam(value = "eid")String eId
+            ,@RequestParam(value = "arriveTime")String arriveTime,
+             HttpServletResponse response) throws IOException, ParseException {
 
         response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html;charset=UTF-8");
 
         AttendanceDetail attendanceDetail = new AttendanceDetail();
         attendanceDetail.seteId(Integer.valueOf(eId));
-        attendanceDetail.setArriveTime(new Date(arriveTime));
+        //解析时间
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        Date parseTime = dateFormat.parse(arriveTime);
+        attendanceDetail.setArriveTime(parseTime);
+        //新增打卡数据
         CheckInMsg checkInMsg = attendanceDetailService.checkIn(attendanceDetail);
         //返回json结果字符串
         if(checkInMsg==CheckInMsg.CHECK_IN_SUCCESS){
-            return new ResultUtil("true");
+            return new ResultUtil("网络错误，打卡失败!");
         }else{
-            return new ResultUtil("false");
+            return new ResultUtil("打卡成功!");
         }
-
     }
+
+//    @RequestMapping("/hasCheckIn")
+//    public void hasCheckIn(@RequestParam(value = "cid")String cid,
+//                           @RequestParam(value = "eid")String eid,
+//                           HttpServletRequest request,
+//                           HttpServletResponse response) throws IOException {
+//
+//        response.setCharacterEncoding("UTF-8");
+//        response.setContentType("text/html;charset=UTF-8");
+//        String name = attendanceDetailService.sel
+//        System.out.println("isEmployeeExist:"+eid);
+//        if(name==null){
+//            //如果没找到或者不存在返回false
+//            response.getWriter().print("false");
+//        }else{
+//            //找到返回true
+//            response.getWriter().print("true");
+//        }
+//        response.getWriter().close();
+//        return ;
+//    }
 
     @RequestMapping("/checkOut")
     private @ResponseBody ResultUtil checkOut(
             @RequestParam (value = "cid")String cid,
-            @RequestParam(value = "eId")String eId
+            @RequestParam(value = "eid")String eId
             ,HttpServletResponse response) throws IOException {
         CheckOutMsg checkOutMsg = attendanceDetailService.checkOut(Integer.valueOf(eId));
         //返回json结果字符串
@@ -254,7 +284,6 @@ public class AttendanceDetailController {
             return new ResultUtil("true");
         }else{
             return new ResultUtil("false");
-
         }
     }
 

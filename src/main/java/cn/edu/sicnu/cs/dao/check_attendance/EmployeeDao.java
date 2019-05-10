@@ -59,4 +59,11 @@ public interface EmployeeDao {
      */
     byte[] selectImageByEid(Integer id);
 
+    /**
+     *
+     * @param id
+     * @return
+     */
+    String selectNameByEid(Integer id);
+
 }

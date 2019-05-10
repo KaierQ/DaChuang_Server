@@ -5,6 +5,7 @@ package cn.edu.sicnu.cs.utils;
  * @date 2019-05-07 20:11
  */
 public class ResultUtil {
+    private String result;
 
     public ResultUtil() {
         super();
@@ -13,8 +14,6 @@ public class ResultUtil {
     public ResultUtil(String result) {
         this.result = result;
     }
-
-    private String result;
 
     public void setResult(String result) {
         this.result = result;

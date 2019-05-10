@@ -13,7 +13,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -146,7 +149,7 @@ public class EmployeeController {
         employee.setSignDate(new Date());
         employee.setDepartmentId(department.getId());
 
-        File file = new File(path,"temp.jpg");
+        File file = new File(path,"test.jpg");
         InputStream is = new FileInputStream(file);
         int len = 0;
         while((len = is.read(tempBytes,0,tempBytes.length))!=-1){
@@ -169,7 +172,7 @@ public class EmployeeController {
             resultUtil.setResult("false");
         }
         resultUtil.setResult("true");
-        file.delete();
+//        file.delete();
         return resultUtil;
     }
 
@@ -177,16 +180,17 @@ public class EmployeeController {
     public void checkIn(@RequestParam(value = "cid")String cid,
                         @RequestParam(value = "eid")String eid,
                         HttpServletRequest request,
-                        HttpServletResponse response){
-
-        System.out.println(cid+" "+eid);
-        Employee employee = employeeService.selectByPrimaryKey(Integer.valueOf(eid));
-        byte[] bytes = employee.getImage();
+                        HttpServletResponse response) throws IOException {
         //设置文件名
         response.addHeader("Content-Disposition","attachment;filename=image.jpg");
         //设置文件ContentType类型，这样设置，会自动判断下载文件类型
         response.setContentType("multipart/form-data");
         ServletOutputStream outputStream=null;
+        System.out.println(cid+" "+eid);
+
+        Employee employee = employeeService.selectByPrimaryKey(Integer.valueOf(eid));
+        //判断是否员工是否存在
+        byte[] bytes = employee.getImage();
         try {
             outputStream = response.getOutputStream();
             outputStream.write(bytes);
@@ -202,5 +206,26 @@ public class EmployeeController {
         }
 
     }
+
+    @RequestMapping("/isEmployeeExist")
+    public void isEmployeeExist(@RequestParam(value = "cid")String cid,
+                                @RequestParam(value = "eid")String eid,
+                                HttpServletRequest request,
+                                HttpServletResponse response) throws IOException {
+        response.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
+        String name = employeeService.selectNameByEid(Integer.valueOf(eid));
+        System.out.println("isEmployeeExist:"+eid);
+        if(name==null){
+            //如果没找到或者不存在返回false
+            response.getWriter().print("false");
+        }else{
+            //找到返回true
+            response.getWriter().print("true");
+        }
+        response.getWriter().close();
+        return ;
+    }
+
 
 }

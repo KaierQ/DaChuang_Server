@@ -57,6 +57,9 @@
   <select id="selectImageByEid" resultType="byte[]">
     select image from employee where id=#{id};
   </select>
+  <select id="selectNameByEid" resultType="string">
+    select name from employee where id=#{id};
+  </select>
 
 
 </mapper>

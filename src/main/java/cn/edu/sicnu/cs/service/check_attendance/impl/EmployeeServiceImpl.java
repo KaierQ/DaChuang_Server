@@ -57,4 +57,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         return employeeDao.selectImageByEid(id);
     }
 
+    @Override
+    public String selectNameByEid(Integer id) {
+        return employeeDao.selectNameByEid(id);
+    }
+
 }
