@@ -18,5 +18,4 @@ public class TerminalController {
         return "terminal/terminal";
     }
 
-
 }

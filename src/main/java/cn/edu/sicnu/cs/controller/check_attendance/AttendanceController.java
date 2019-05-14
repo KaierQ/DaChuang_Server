@@ -78,9 +78,11 @@ public class AttendanceController {
             boolean late = attendanceDetailService.isLate(arriveTime);
             boolean earlyLeft = attendanceDetailService.isEarlyLeft(leftTime);
             if(!late){
+                //如果没有迟到
                 countNumNoLate++;
             }
             if(!earlyLeft){
+                //如果没有早退
                 countNumNoEarlyLeft++;
             }
         }

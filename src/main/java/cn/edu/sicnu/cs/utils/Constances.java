@@ -17,6 +17,12 @@ public class Constances {
 
     public static String dbPort="3306";
 
+    public static String CHECK_IN_SUCCESS = "1001";
 
+    public static String CHECK_OUT_SUCCESS = "1002";
+
+    public static String INTERNET_PARAM_ERROR = "1003";
+
+    public static String HAD_CHECK = "1004";
 
 }

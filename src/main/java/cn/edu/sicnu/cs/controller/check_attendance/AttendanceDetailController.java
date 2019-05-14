@@ -5,6 +5,8 @@ import cn.edu.sicnu.cs.pojo.EmployeeTodayDetail;
 import cn.edu.sicnu.cs.service.check_attendance.AttendanceDetailService;
 import cn.edu.sicnu.cs.service.check_attendance.EmployeeService;
 import cn.edu.sicnu.cs.utils.*;
+import cn.edu.sicnu.cs.utils.analogy.DataAnalogyCheckOut;
+import cn.edu.sicnu.cs.utils.analogy.DataAnalogyOfCheckIn;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -15,9 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.text.DateFormat;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -49,7 +49,6 @@ public class AttendanceDetailController {
         //统计今日
         //判断现在是否打卡时间
         int typeOfWorkTime = getTypeOfWorkTime();
-//        int typeOfWorkTime = 3;
         System.out.println(typeOfWorkTime);
 
         if(typeOfWorkTime==TimeOfWork.BRFORE_WORK){
@@ -71,8 +70,7 @@ public class AttendanceDetailController {
         model.addAttribute("numOfLate",numOfLate);
         System.out.println("总人数:"+numberOfPersonnel+" 迟到人数:"+numOfLate+" 未到人数:"+numOfNoArrive);
 
-//        if (typeOfWorkTime==TimeOfWork.AFTER_WORK){
-        if(true){
+        if (typeOfWorkTime==TimeOfWork.AFTER_WORK){
             //如果是下班时间到24:00之前
             //统计下班打卡合格的人数
             DataAnalogyCheckOut dataAnalogyCheckOut = getNumOfCheckout(details);
@@ -164,7 +162,6 @@ public class AttendanceDetailController {
 
     @RequestMapping("/getCertainEmployeeDetail")
     public String getCertainEmployeeDetail(@RequestParam(value = "cid")String cid,@RequestParam(value = "eId")String eId,Model model){
-        System.out.println(cid+" "+eId);
         List<AttendanceDetail> details = attendanceDetailService.selectAllByEid(Integer.valueOf(eId));
 
         int numOfLate = 0;
@@ -233,57 +230,50 @@ public class AttendanceDetailController {
             ,@RequestParam(value = "arriveTime")String arriveTime,
              HttpServletResponse response) throws IOException, ParseException {
 
-        response.setCharacterEncoding("UTF-8");
-        response.setContentType("text/html;charset=UTF-8");
-
-        AttendanceDetail attendanceDetail = new AttendanceDetail();
-        attendanceDetail.seteId(Integer.valueOf(eId));
+        Integer employeeId = Integer.valueOf(eId);
+        AttendanceDetail attendanceDetail = attendanceDetailService.selectTodayByEid(employeeId);
+        //判断是否已经打卡
+        if(attendanceDetail!=null){
+            return new ResultUtil(Constances.HAD_CHECK);
+        }
+        //生成打卡信息
+        attendanceDetail = new AttendanceDetail();
+        attendanceDetail.seteId(employeeId);
         //解析时间
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-        Date parseTime = dateFormat.parse(arriveTime);
+        Date parseTime = new Date();
         attendanceDetail.setArriveTime(parseTime);
+        attendanceDetail.setCreatedDate(new Date());
         //新增打卡数据
         CheckInMsg checkInMsg = attendanceDetailService.checkIn(attendanceDetail);
         //返回json结果字符串
         if(checkInMsg==CheckInMsg.CHECK_IN_SUCCESS){
-            return new ResultUtil("网络错误，打卡失败!");
+            return new ResultUtil(Constances.CHECK_IN_SUCCESS);
         }else{
-            return new ResultUtil("打卡成功!");
+            return new ResultUtil(Constances.INTERNET_PARAM_ERROR);
         }
-    }
 
-//    @RequestMapping("/hasCheckIn")
-//    public void hasCheckIn(@RequestParam(value = "cid")String cid,
-//                           @RequestParam(value = "eid")String eid,
-//                           HttpServletRequest request,
-//                           HttpServletResponse response) throws IOException {
-//
-//        response.setCharacterEncoding("UTF-8");
-//        response.setContentType("text/html;charset=UTF-8");
-//        String name = attendanceDetailService.sel
-//        System.out.println("isEmployeeExist:"+eid);
-//        if(name==null){
-//            //如果没找到或者不存在返回false
-//            response.getWriter().print("false");
-//        }else{
-//            //找到返回true
-//            response.getWriter().print("true");
-//        }
-//        response.getWriter().close();
-//        return ;
-//    }
+    }
 
     @RequestMapping("/checkOut")
     private @ResponseBody ResultUtil checkOut(
             @RequestParam (value = "cid")String cid,
             @RequestParam(value = "eid")String eId
             ,HttpServletResponse response) throws IOException {
-        CheckOutMsg checkOutMsg = attendanceDetailService.checkOut(Integer.valueOf(eId));
+
+        Integer employeeId = Integer.valueOf(eId);
+        AttendanceDetail attendanceDetail = attendanceDetailService.selectTodayByEid(employeeId);
+        //判断是否已经打卡
+        if(attendanceDetail!=null){
+            if(attendanceDetail.getLeftTime()!=null){
+                return new ResultUtil(Constances.HAD_CHECK);
+            }
+        }
+        CheckOutMsg checkOutMsg = attendanceDetailService.checkOut(employeeId);
         //返回json结果字符串
         if(checkOutMsg==CheckOutMsg.CHECK_OUT_SUCCESS){
-            return new ResultUtil("true");
+            return new ResultUtil(Constances.CHECK_OUT_SUCCESS);
         }else{
-            return new ResultUtil("false");
+            return new ResultUtil(Constances.INTERNET_PARAM_ERROR);
         }
     }
 

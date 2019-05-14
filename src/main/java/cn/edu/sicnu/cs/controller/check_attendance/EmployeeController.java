@@ -149,7 +149,7 @@ public class EmployeeController {
         employee.setSignDate(new Date());
         employee.setDepartmentId(department.getId());
 
-        File file = new File(path,"test.jpg");
+        File file = new File(path,"temp.jpg");
         InputStream is = new FileInputStream(file);
         int len = 0;
         while((len = is.read(tempBytes,0,tempBytes.length))!=-1){
@@ -171,7 +171,7 @@ public class EmployeeController {
             //错误提示
             resultUtil.setResult("false");
         }
-        resultUtil.setResult("true");
+        resultUtil.setResult(""+id.getId());
 //        file.delete();
         return resultUtil;
     }

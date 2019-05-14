@@ -123,7 +123,6 @@ public class CompanyController {
         company.setTel(tel);
         company.setIntro(intro);
 
-        System.out.println(company);
         companyService.insert(company);
 
         ModelAndView mv = new ModelAndView();

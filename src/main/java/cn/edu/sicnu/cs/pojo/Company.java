@@ -5,6 +5,7 @@ package cn.edu.sicnu.cs.pojo;
  * @author Kaier
  */
 public class Company {
+
     private Integer cId;
 
     private String companyName;

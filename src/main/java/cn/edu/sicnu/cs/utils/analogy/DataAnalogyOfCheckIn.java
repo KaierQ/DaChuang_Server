@@ -1,4 +1,6 @@
-package cn.edu.sicnu.cs.utils;
+package cn.edu.sicnu.cs.utils.analogy;
+
+import cn.edu.sicnu.cs.utils.TimeOfWork;
 
 /**
  *

@@ -102,6 +102,7 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
     public CheckInMsg checkIn(AttendanceDetail attendanceDetail) {
         //新增今日打卡信息
         int ret = attendanceDetailDao.insert(attendanceDetail);
+        System.out.println(attendanceDetail);
         if(ret<0){
             //新增失败抛异常
             return CheckInMsg.CHECK_IN_FAIL;
@@ -111,8 +112,11 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
         //判断迟到情况
         Date arriveTime = attendanceDetail.getArriveTime();
         //工作日加1
+        if(attendance.getWorkdays()==null){
+            init(attendance);
+        }
         attendance.setWorkdays(attendance.getWorkdays()+1);
-        attendance.setMonthWorkdays(attendance.getWorkdays()+1);
+        attendance.setMonthWorkdays(attendance.getMonthWorkdays()+1);
         if(!isLate(arriveTime)){
             //如果未迟到
             attendance.setNolateDays(attendance.getNolateDays()+1);
@@ -126,10 +130,26 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
         //更新考勤统计信息
         ret = attendanceDao.updateAttendance(attendance);
         //更新失败抛异常
-        if (ret<0) {return CheckInMsg.CHECK_IN_FAIL;}
+        if (ret<0) {
+            return CheckInMsg.CHECK_IN_FAIL;
+        }
 
         return CheckInMsg.CHECK_IN_SUCCESS;
     }
+
+    private void init(Attendance attendance){
+        attendance.setWorkdays(0);
+        attendance.setNolateDays(0);
+        attendance.setLateDays(0);
+        attendance.setEarlyLeftdays(0);
+        attendance.setLatedLeftdays(0);
+        attendance.setMonthWorkdays(0);
+        attendance.setMonthNolateDays(0);
+        attendance.setMonthLateDays(0);
+        attendance.setMonthEarlyLeftdays(0);
+        attendance.setMonthLatedLeftdays(0);
+    }
+
 
     /**
      * 判断是否迟到
@@ -153,18 +173,17 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
     @Override
     public CheckOutMsg checkOut(Integer eid) {
         //获取员工当天的考勤详细信息
-        AttendanceDetail attendanceDetail = attendanceDetailDao.selectTodayByEid(eid);
-        if(attendanceDetail==null){
+        int ret = attendanceDetailDao.updateLeftTimeByEid(eid);
+        if(ret<0){
             return CheckOutMsg.CHECK_OUT_FAIL;
         }
-        Date date = new Date();
-        attendanceDetail.setLeftTime(date);
 
         //获取当前员工统计信息
         Attendance attendance = attendanceDao.selectByEid(eid);
         if(attendance==null){
             return CheckOutMsg.CHECK_OUT_FAIL;
         }
+        Date date = new Date();
         if(!isEarlyLeft(date)){
             //如果没有早退
             attendance.setLatedLeftdays(attendance.getLatedLeftdays()+1);
@@ -175,7 +194,7 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
             attendance.setMonthEarlyLeftdays(attendance.getMonthEarlyLeftdays()+1);
         }
         //更新考勤统计信息
-        int ret = attendanceDao.updateAttendance(attendance);
+        ret = attendanceDao.updateAttendance(attendance);
         if (ret<0){
             return CheckOutMsg.CHECK_OUT_FAIL;
         }
@@ -258,7 +277,13 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
     }
 
     @Override
+    public AttendanceDetail selectTodayByEid(Integer eId) {
+        return attendanceDetailDao.selectTodayByEid(eId);
+    }
+
+    @Override
     public int updateByEidAndCreateDate(AttendanceDetail attendanceDetail) {
         return attendanceDetailDao.updateByEidAndCreateDate(attendanceDetail);
     }
+
 }

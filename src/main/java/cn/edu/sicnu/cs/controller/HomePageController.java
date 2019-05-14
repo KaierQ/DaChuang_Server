@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 @RequestMapping("/homepage")
-public class HomePage {
+public class HomePageController {
 
     @RequestMapping("/getHome/{cid}")
     public String requestHomePage(@PathVariable(value = "cid")String cid, Model model){

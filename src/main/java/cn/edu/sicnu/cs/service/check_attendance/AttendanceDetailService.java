@@ -90,13 +90,19 @@ public interface AttendanceDetailService {
      */
     List<AttendanceDetail> selectByDate(String certainDate);
 
-
     /**
      * 上班打卡开始工作
      * @param attendanceDetail
      * @return
      */
     CheckInMsg checkIn(AttendanceDetail attendanceDetail);
+
+    /**
+     * 根据某员工今日的打卡记录
+     * @param eId
+     * @return
+     */
+    AttendanceDetail selectTodayByEid(Integer eId);
 
     /**
      * 下班打卡走人
