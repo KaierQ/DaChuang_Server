@@ -139,4 +139,11 @@ public interface AttendanceDetailService {
      */
     boolean isEarlyLeft(Date date);
 
+    /**
+     *
+     * @param details
+     * @param numOfLate
+     * @return
+     */
+    public String getDataAnalogyResult(List<AttendanceDetail> details,int numOfLate);
 }

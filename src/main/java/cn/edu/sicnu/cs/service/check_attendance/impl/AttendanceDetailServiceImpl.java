@@ -10,11 +10,15 @@ import cn.edu.sicnu.cs.utils.AttendanceInstances;
 import cn.edu.sicnu.cs.utils.CheckInMsg;
 import cn.edu.sicnu.cs.utils.CheckOutMsg;
 import cn.edu.sicnu.cs.utils.TimeOfWork;
+import cn.edu.sicnu.cs.utils.analogy.ALinearRegressionAnalogy;
+import cn.edu.sicnu.cs.utils.analogy.AverageAnalogy;
+import cn.edu.sicnu.cs.utils.analogy.VarianceAnalogy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -137,6 +141,10 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
         return CheckInMsg.CHECK_IN_SUCCESS;
     }
 
+    /**
+     * 初始化attendance
+     * @param attendance
+     */
     private void init(Attendance attendance){
         attendance.setWorkdays(0);
         attendance.setNolateDays(0);
@@ -284,6 +292,110 @@ public class AttendanceDetailServiceImpl implements AttendanceDetailService {
     @Override
     public int updateByEidAndCreateDate(AttendanceDetail attendanceDetail) {
         return attendanceDetailDao.updateByEidAndCreateDate(attendanceDetail);
+    }
+
+    /**
+     * 根据考勤数据获取数据分析结果
+     * @param details
+     * @return
+     */
+    @Override
+    public String getDataAnalogyResult(List<AttendanceDetail> details,int numOfLate){
+        Calendar calendar = Calendar.getInstance();
+        //记录与上班时间时间差的浮动值
+        List<Integer> values = new ArrayList<>();
+        for (AttendanceDetail detail : details) {
+            calendar.setTime(detail.getArriveTime());
+            int hour = calendar.get(Calendar.HOUR);
+            int minute = calendar.get(Calendar.MINUTE);
+            int distance = (TimeOfWork.TIME_START_WORK-hour)*60;
+            distance -= minute;
+            values.add(distance);
+        }
+        //计算浮动差平均值
+        AverageAnalogy averageAnalogy = new AverageAnalogy(values);
+        double avg = averageAnalogy.computeAverage();
+        //计算方差
+        VarianceAnalogy varianceAnalogy = new VarianceAnalogy(avg,values);
+        double variance = varianceAnalogy.computeVariance();
+        //计算线性回归方程曲线
+        ALinearRegressionAnalogy linearRegressionAnalogy = new ALinearRegressionAnalogy(avg,values);
+        linearRegressionAnalogy.computeResult();
+        //获得斜率
+        double a = linearRegressionAnalogy.getA();
+        //获得截距
+        double b = linearRegressionAnalogy.getB();
+        //计算分析结果
+        String result = getResult(avg, variance, a, b,numOfLate);
+
+        return result;
+    }
+
+    /**
+     * 根据平均值，方差，一元线性回归方程曲线，判断结果
+     * @param avg
+     * @param variance
+     * @param a
+     * @param b
+     * @return
+     */
+    private String getResult(double avg,double variance,double a,double b,int numOfLate){
+        //如果有迟到
+        String str ="";
+        String trend = "";
+        if(numOfLate>0&&5>=numOfLate){
+            str= "近期偶有迟到,次数为:"+numOfLate+" 但";
+            trend = getTrend(a);
+        }else if(numOfLate>5&&numOfLate<=10){
+            str= "近期迟到次数较多,次数为:"+numOfLate+" 但";
+            trend = getTrend(a);
+        }else if(numOfLate>10){
+            str= "近期迟到次数很多,次数为:"+numOfLate+" ";
+            trend = getTrend(a);
+        }else{
+            //如果没迟到
+            str= "近期无迟到记录,";
+            trend = getTrend(a);
+        }
+        return str+trend;
+    }
+
+    /**
+     * 根据斜率判断趋势
+     * @param a
+     * @return
+     */
+    private String getTrend(double a){
+        double tan15 = Math.tan(Math.toRadians(15));
+        double tan_15 = -tan15;
+        double tan45 = Math.tan(Math.toRadians(45));
+        double tan_45 = -tan45;
+        System.out.println("tan15:"+tan15+" tan_15:"+tan_15+" tan45:"+tan45+" tan_45:"+tan_45);
+        String str="";
+        if(a>0){
+            if(0<a&&a<=tan15){
+                //如果斜率在0~15度之间
+                str = "工作积极性呈上升的态势";
+            }else if(a>tan15&&a<=tan45){
+                //如果斜率在15~45度之间
+                str = "工作积极性呈上升的态势，态势较佳";
+            }else if (a>tan45){
+                //如果斜率在45度以上
+                str = "工作积极性上升度很好，正逐步养成或更正习惯.";
+            }
+        }else{
+            if(a>=tan_15 && a<0){
+                //如果效率在-15度到0度之间
+                str = "上班积极性趋势不佳,有逐步养成迟到习惯苗头的可能.";
+            }else if (a>=tan_45 && a<tan_15){
+                //如果效率在-15度到-45度之间
+                str = "上班积极性趋势正在变差,此习惯在不久可能会养成.";
+            }else{
+                //-45以下
+                str = "上班积极性趋势正变得很差,此习惯可能较顽固.";
+            }
+        }
+        return str;
     }
 
 }

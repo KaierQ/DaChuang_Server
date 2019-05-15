@@ -51,7 +51,7 @@
                 </ul>
             </div >
             <div class="link_analogy" style="float:left">
-                <a href="../attendanceDetail/getCertainEmployeeDetail?cid=${cid}&eId=${item.eId}">查看分析 ></a>
+                <a href="../attendanceDetail/getCertainEmployeeDetail?cid=${cid}&eId=${item.eId}" target="_blank">查看分析 ></a>
             </div>
         </div>
     </c:forEach>

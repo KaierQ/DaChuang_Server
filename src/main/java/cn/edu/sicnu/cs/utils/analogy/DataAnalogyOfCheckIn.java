@@ -2,6 +2,8 @@ package cn.edu.sicnu.cs.utils.analogy;
 
 import cn.edu.sicnu.cs.utils.TimeOfWork;
 
+import java.util.Arrays;
+
 /**
  *
  * 用于今日上班打卡情况的数据分析结果存储
@@ -110,7 +112,7 @@ public class DataAnalogyOfCheckIn {
      */
     public void addData(int hour,int minute,int second){
         int t = minute/15;
-        if(hour<=TimeOfWork.TIME_START_WORK-1){
+        if(hour<=TimeOfWork.TIME_START_WORK-2){
             addBEFORE_8_00();
         }else if (hour<TimeOfWork.TIME_START_WORK){
             addPro(t);
@@ -157,6 +159,21 @@ public class DataAnalogyOfCheckIn {
         return numOfLate;
     }
 
+    @Override
+    public String toString() {
+        return "DataAnalogyOfCheckIn{" +
+                "BEFORE_8_00=" + BEFORE_8_00 +
+                ", _8_00_8_15=" + _8_00_8_15 +
+                ", _8_15_8_30=" + _8_15_8_30 +
+                ", _8_30_8_45=" + _8_30_8_45 +
+                ", _8_45_9_00=" + _8_45_9_00 +
+                ", _9_00_9_15=" + _9_00_9_15 +
+                ", _9_15_9_30=" + _9_15_9_30 +
+                ", AFTER_9_30=" + AFTER_9_30 +
+                ", numOfLate=" + numOfLate +
+                ", data=" + Arrays.toString(data) +
+                '}';
+    }
 }
 
 

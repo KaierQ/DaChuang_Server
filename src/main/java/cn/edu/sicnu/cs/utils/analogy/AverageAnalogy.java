@@ -9,6 +9,7 @@ import java.util.List;
  * @date 2019-05-14 21:51
  */
 public class AverageAnalogy {
+
     /**
      * 考勤数据集合
      */
@@ -16,25 +17,23 @@ public class AverageAnalogy {
     /**
      *     存储平均值结果
      */
-    private int averageValue;
-
-    public AverageAnalogy() {
-        super();
-    }
+    private double averageValue;
 
     public AverageAnalogy(List<Integer> values) {
         this.values = values;
     }
 
-    public void computeAverage(){
-        int sum=0;
+    public double computeAverage(){
+        double sum=0;
         for (Integer value : values) {
             sum += value;
         }
         averageValue = sum/values.size();
-    }
-
-    public int getAverageValue() {
         return averageValue;
     }
+
+    public double getAverageValue() {
+        return averageValue;
+    }
+
 }

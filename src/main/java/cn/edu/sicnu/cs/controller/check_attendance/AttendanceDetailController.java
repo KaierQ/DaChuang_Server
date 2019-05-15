@@ -43,14 +43,9 @@ public class AttendanceDetailController {
         //获取企业总人数
         int numberOfPersonnel = employeeService.selectNumberOfPersonnel();
         List<AttendanceDetail> details = attendanceDetailService.selectAllToday();
-        for (AttendanceDetail detail : details) {
-            System.out.println(detail);
-        }
         //统计今日
         //判断现在是否打卡时间
         int typeOfWorkTime = getTypeOfWorkTime();
-        System.out.println(typeOfWorkTime);
-
         if(typeOfWorkTime==TimeOfWork.BRFORE_WORK){
             //如果是上班之前
             //显示现在是未上班状态
@@ -152,9 +147,6 @@ public class AttendanceDetailController {
     public String getEmployeeDetail(@RequestParam(value = "cid")String cid,Model model){
         //获取今日所有员工打卡信息
         List<EmployeeTodayDetail> employeeTodayDetails = attendanceDetailService.selectAllTodayDetail();
-        for (EmployeeTodayDetail employeeTodayDetail : employeeTodayDetails) {
-            System.out.println(employeeTodayDetail);
-        }
         model.addAttribute("cid",cid);
         model.addAttribute("employeeTodayDetails",employeeTodayDetails);
         return "check/employees_today_detail";
@@ -162,8 +154,8 @@ public class AttendanceDetailController {
 
     @RequestMapping("/getCertainEmployeeDetail")
     public String getCertainEmployeeDetail(@RequestParam(value = "cid")String cid,@RequestParam(value = "eId")String eId,Model model){
-        List<AttendanceDetail> details = attendanceDetailService.selectAllByEid(Integer.valueOf(eId));
 
+        List<AttendanceDetail> details = attendanceDetailService.selectAllByEid(Integer.valueOf(eId));
         int numOfLate = 0;
         int numOfNoArrive = 0;
         int numOfEarlyLeave = 0;
@@ -175,7 +167,6 @@ public class AttendanceDetailController {
         for (AttendanceDetail detail : details) {
             late=false;
             earlyLeave=false;
-            System.out.println(detail);
             Date arriveTime = detail.getArriveTime();
             if(arriveTime!=null){
                 //获取时间
@@ -219,7 +210,8 @@ public class AttendanceDetailController {
         model.addAttribute("numOfNoCheckOut",numOfNoCheckOut);
         model.addAttribute("publicData",publicData);
         model.addAttribute("details",details);
-
+        String dataAnalogyResult = attendanceDetailService.getDataAnalogyResult(details, numOfLate);
+        model.addAttribute("dataAnalogyResult",dataAnalogyResult);
         return "check/certain_detail";
     }
 

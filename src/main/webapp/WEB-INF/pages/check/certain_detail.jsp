@@ -15,8 +15,9 @@
     <title>分析</title>
 </head>
 <body>
-<div id="title" style="text-align:center">
-    <h2>此员工近期打卡一览表</h2>
+<br id="title" style="text-align:center">
+    <h2>此员工近期打卡一览表</h2></br>
+    <h3>${dataAnalogyResult}</h3>
 </div>
 <div id="head01" style="text-align:center">
     <h3>近期上班打卡</h3>
