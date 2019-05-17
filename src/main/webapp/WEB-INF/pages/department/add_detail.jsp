@@ -16,10 +16,6 @@
     <script>
         $(document).ready(function(){
             $("#submit_btn").click(function(){
-                var uid = $("#departmentId").val().trim();
-                var name = $("#name").val().trim();
-                var title = $("#leaderId").val().trim();
-                var salary = $("#leaderName").val().trim();
                 var urlStr="../department/add_info";
                 $("#fmV").attr("action",urlStr).submit();
             });
@@ -43,7 +39,7 @@
             领导姓名:<input id="leaderName" type="text" name="leaderName"/>
         </div>
         <div class="input_div">
-            <input  id="submit_btn" class="submit_btn" type="button" value="更改" style="color:brown"/>
+            <input  id="submit_btn" class="submit_btn" type="button" value="添加" style="color:brown"/>
         </div>
     </form>
 </div>

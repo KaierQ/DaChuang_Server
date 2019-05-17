@@ -175,6 +175,7 @@ public class EmployeeController {
         //生成打卡总数统计表
         Attendance attendance = new Attendance();
         attendance.seteId(id.getId());
+        init(attendance);
         attendanceService.insert(attendance);
 
 
@@ -187,6 +188,18 @@ public class EmployeeController {
         return resultUtil;
     }
 
+    private void init(Attendance attendance){
+        attendance.setWorkdays(0);
+        attendance.setLateDays(0);
+        attendance.setNolateDays(0);
+        attendance.setEarlyLeftdays(0);
+        attendance.setLatedLeftdays(0);
+        attendance.setMonthWorkdays(0);
+        attendance.setMonthLateDays(0);
+        attendance.setMonthNolateDays(0);
+        attendance.setMonthEarlyLeftdays(0);
+        attendance.setMonthLatedLeftdays(0);
+    }
     @RequestMapping("/checkIn_getImg")
     public void checkIn(@RequestParam(value = "cid")String cid,
                         @RequestParam(value = "eid")String eid,

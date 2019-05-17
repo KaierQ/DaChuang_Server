@@ -75,8 +75,9 @@ public class DepartmentController {
         department.setLeaderId(Integer.valueOf(leaderId));
         department.setLeaderName(leaderName);
         department.setPersonnelNum(0);
+        departmentService.insert(department);
         model.addAttribute("departmentId",department.getId());
-        return "department/success";
+        return "department/success_add";
     }
 
     @RequestMapping("/update_detail")

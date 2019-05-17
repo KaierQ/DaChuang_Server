@@ -58,8 +58,8 @@ public class SalaryController {
             content[i][2] = attendance.getMonthWorkdays()+"";
             content[i][3] = attendance.getMonthLateDays()+"";
             content[i][4] = attendance.getMonthEarlyLeftdays()+"";
-            int workDays =  attendance.getMonthWorkdays()- attendance.getMonthLateDays()-attendance.getMonthEarlyLeftdays();
-            content[i][5] = employee.getSalary().multiply(new BigDecimal(workDays)).toString();
+
+            content[i][5] = employee.getSalary().subtract(new BigDecimal(attendance.getMonthLateDays()*20)).toString();
 
         }
 
