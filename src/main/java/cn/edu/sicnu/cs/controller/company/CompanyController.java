@@ -123,7 +123,10 @@ public class CompanyController {
         company.setTel(tel);
         company.setIntro(intro);
 
+        System.out.println(company);
+
         companyService.insert(company);
+        companyService.createNewDB("`"+company.getcId()+"_company`");
 
         ModelAndView mv = new ModelAndView();
         mv.addObject("cid",company.getcId());

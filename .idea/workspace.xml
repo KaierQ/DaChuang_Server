@@ -7,16 +7,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="442f6763-8005-4e4f-a80a-bb3d0c9267f1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/analogy/ALinearRegressionAnalogy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/analogy/VarianceAnalogy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/DepartmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/department/before_work.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/department/delete_detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/department/departments.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/department/update_delete.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/department/update_detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/employee/before_work.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/department/add.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/department/delete.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/department/fail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/department/select.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/department/success.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/department/update.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/add_detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/delete_detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/no_data.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/options_department.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/show_departments.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/success_add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/update_detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/no_data.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/903fd17b-07d1-4348-bb8b-dfd6edf10fda.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/903fd17b-07d1-4348-bb8b-dfd6edf10fda.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/AttendanceDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/AttendanceDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceDetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/analogy/AverageAnalogy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/analogy/AverageAnalogy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/analogy/DataAnalogyOfCheckIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/analogy/DataAnalogyOfCheckIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/certain_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/certain_detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/employees_today_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/employees_today_detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/company/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/company/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/company/CompanyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/company/CompanyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/company/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/company/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/company/impl/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/company/impl/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/SpringMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/SpringMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/CompanyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/CompanyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/homepage/homepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/homepage/homepage.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,7 +93,38 @@
     <favorites_list name="final_project" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DepartmentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/DepartmentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="success.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/success.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="success_add.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/success_add.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,8 +133,8 @@
         <option value="mybatis-generator-config" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -88,10 +144,12 @@
       <find>MONTH</find>
       <find>DATE</find>
       <find>int</find>
+      <find>employee</find>
     </findStrings>
     <replaceStrings>
       <replace>cId</replace>
       <replace>double</replace>
+      <replace>department</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -100,26 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/DepartmentMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/Department.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/DepartmentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/DepartmentDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mappers/DepartmentMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/DepartmentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/Interceptor/DBOptionInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/Interceptor/EmployeeInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/analogy_all_today.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/ExcelUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/SpringMVC.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/SalaryController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttencedanceController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/CheckPercent.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/report.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/report/report.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/BaiduTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/EmployeeDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/EmployeeMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/EmployeeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/EmployeeServiceImpl.java" />
@@ -127,7 +165,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/register_company/registerResult.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/salary/salary_url_page.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/terminal/teriminal.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/homepage/homepage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/terminal/terminal.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/AttendanceDetailDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/Constances.java" />
@@ -135,8 +172,6 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/terminal/TerminalController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/Company.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/company/CompanyController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/EmployeeController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/AttendanceDetailMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/EmployeeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/analogy/DataAnalogyCheckOut.java" />
@@ -149,8 +184,31 @@
         <option value="$PROJECT_DIR$/src/main/resources/config/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/analogy/DataAnalogyOfCheckIn.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/employees_today_detail.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceDetailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/company/CompanyDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/company/CompanyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/company/impl/CompanyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/company/CompanyController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/CompanyMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/EmployeeController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/homepage/homepage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/no_data.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/department/departments.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/no_data.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/SpringMVC.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/Department.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/show_departments.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/update_detail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/delete_detail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/options_department.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/AttendanceMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/AttendanceDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/add_detail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/DepartmentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/DepartmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/success.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/success_add.jsp" />
       </list>
     </option>
   </component>
@@ -200,10 +258,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2076" />
-    <option name="y" value="89" />
-    <option name="width" value="1242" />
-    <option name="height" value="672" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -214,6 +272,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,16 +322,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="check_attendance" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -282,7 +332,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
@@ -291,7 +341,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cs" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="check_attendance" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
@@ -313,6 +364,14 @@
               <item name="final_project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mappers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -330,7 +389,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
@@ -339,8 +398,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="check" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="department" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
@@ -349,16 +408,83 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
               <item name="employee" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="salary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="department" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="salary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="department" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="final_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="salary" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,22 +496,22 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\pages\department" />
+      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\css\department" />
+      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\images\department" />
+      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\css\employee" />
+      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\images\terminal" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\pages\report" />
       <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF" />
       <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp" />
       <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\pages\images\homepage" />
       <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\pages\images" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\images\terminal" />
-      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\css\terminal" />
-      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\java\cn\edu\sicnu\cs\utils" />
-      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\images\homepage" />
-      <recent name="G:\JavaWeb_IntelliJ\graduation_project\final_project\src\main\webapp\WEB-INF\images\salary" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -693,7 +819,8 @@
       <workItem from="1557837778905" duration="2588000" />
       <workItem from="1557885587133" duration="12942000" />
       <workItem from="1557901927854" duration="5997000" />
-      <workItem from="1557915501488" duration="1923000" />
+      <workItem from="1557915501488" duration="5632000" />
+      <workItem from="1558000591584" duration="13087000" />
     </task>
     <servers />
   </component>
@@ -730,7 +857,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="364149000" />
+    <option name="totallyTimeSpent" value="380945000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -743,16 +870,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1911" y="-9" width="1458" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067025" side_tool="true" weight="0.8005658" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50143266" side_tool="true" weight="0.7042062" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32956153" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.19054441" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Tail" order="7" />
-      <window_info anchor="right" id="Database" order="3" weight="0.04021448" />
+      <window_info anchor="right" id="Database" order="3" weight="0.28438395" />
       <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.19638069" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -764,10 +892,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32956153" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.23473541" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49856734" visible="true" weight="0.0651289" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32956153" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4911032" visible="true" weight="0.28008595" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4911032" visible="true" weight="0.3739255" />
       <window_info id="Web" order="2" sideWeight="0.5043668" side_tool="true" weight="0.08099063" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" sideWeight="0.50889677" side_tool="true" weight="0.17225201" />
@@ -782,10 +910,12 @@
     <layout-to-restore>
       <window_info anchor="bottom" id="Application Servers" order="15" weight="0.32956153" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.28672317" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.12871288" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.3772049" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -793,27 +923,25 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067025" side_tool="true" weight="0.8005658" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.42008486" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.36092266" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32956153" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32956153" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.19101876" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.19054441" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281471" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4911032" visible="true" weight="0.123324394" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.04088472" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4911032" visible="true" weight="0.24856733" />
+      <window_info anchor="right" id="Database" order="6" weight="0.28438395" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="7" sideWeight="0.5043668" side_tool="true" weight="0.08099063" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.19638069" />
-      <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Tail" order="14" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.43281472" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5120226" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -824,7 +952,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="94" />
+      <option name="time" value="96" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -832,684 +960,304 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/IdUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/homepage/icon-nav-2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/homepage/icon-nav-3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/homepage/icon-nav-4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/homepage/icon-nav-5.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/homepage/icon-nav-6.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/department/person.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/department/update_delete.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="-396">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/ManagerLoginCheckBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/department/add.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/department/select.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/department/delete.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/department/update.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/employee/before_work.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/employee/fail.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/employee/employees.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/no_data.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.pojo.Department">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.pojo.Department</OriginalElement>
-          <nodes>
-            <node x="" y="">cn.edu.sicnu.cs.pojo.Department</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="91.0" y="73.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.pojo.EmployeeTodayDetail">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.pojo.EmployeeTodayDetail</OriginalElement>
-          <nodes>
-            <node x="0.0" y="0.0">cn.edu.sicnu.cs.pojo.EmployeeTodayDetail</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-200.0" y="-15.0" />
-          <SelectedNodes>
-            <node>cn.edu.sicnu.cs.pojo.EmployeeTodayDetail</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.pojo.IdUtils">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.pojo.IdUtils</OriginalElement>
-          <nodes>
-            <node x="39.0" y="0.0">java.io.Serializable</node>
-            <node x="0.0" y="81.0">cn.edu.sicnu.cs.pojo.IdUtils</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="cn.edu.sicnu.cs.pojo.IdUtils" target="java.io.Serializable">
-              <point x="0.0" y="-39.0" />
-              <point x="0.0" y="15.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-192.0" y="-20.0" />
-          <SelectedNodes>
-            <node>cn.edu.sicnu.cs.pojo.IdUtils</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.pojo.ManagerLoginCheckBean">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.pojo.ManagerLoginCheckBean</OriginalElement>
-          <nodes>
-            <node x="0.0" y="0.0">cn.edu.sicnu.cs.pojo.ManagerLoginCheckBean</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-190.0" y="-61.0" />
-          <SelectedNodes>
-            <node>cn.edu.sicnu.cs.pojo.ManagerLoginCheckBean</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.pojo.Company">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.pojo.Company</OriginalElement>
-          <nodes>
-            <node x="0.0" y="0.0">cn.edu.sicnu.cs.pojo.Company</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-189.0" y="31.0" />
-          <SelectedNodes>
-            <node>cn.edu.sicnu.cs.pojo.Company</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/Attendance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.pojo.Attendance">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.pojo.Attendance</OriginalElement>
-          <nodes>
-            <node x="0.0" y="81.0">cn.edu.sicnu.cs.pojo.Attendance</node>
-            <node x="51.5" y="0.0">java.io.Serializable</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="cn.edu.sicnu.cs.pojo.Attendance" target="java.io.Serializable">
-              <point x="0.0" y="-166.0" />
-              <point x="0.0" y="15.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-180.0" y="107.0" />
-          <SelectedNodes>
-            <node>cn.edu.sicnu.cs.pojo.Attendance</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.pojo.AttendanceDetail">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.pojo.AttendanceDetail</OriginalElement>
-          <nodes>
-            <node x="" y="">cn.edu.sicnu.cs.pojo.AttendanceDetail</node>
-            <node x="" y="">java.io.Serializable</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="96.0" y="138.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.controller">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.controller</OriginalElement>
-          <nodes>
-            <node x="" y="">cn.edu.sicnu.cs.controller.check_attendance</node>
-            <node x="" y="">cn.edu.sicnu.cs.controller.company</node>
-            <node x="" y="">cn.edu.sicnu.cs.controller.HomePageController</node>
-            <node x="" y="">cn.edu.sicnu.cs.controller.terminal</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="151.0" y="141.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.controller.check_attendance">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.controller.check_attendance</OriginalElement>
-          <nodes>
-            <node x="" y="">cn.edu.sicnu.cs.controller.check_attendance.AttendanceController</node>
-            <node x="" y="">cn.edu.sicnu.cs.controller.check_attendance.EmployeeController</node>
-            <node x="" y="">cn.edu.sicnu.cs.controller.check_attendance.SalaryController</node>
-            <node x="" y="">cn.edu.sicnu.cs.controller.check_attendance.AttendanceDetailController</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.7222490931076179" x="328.0" y="380.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.controller.check_attendance.AttendanceController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.controller.check_attendance.AttendanceController</OriginalElement>
-          <nodes>
-            <node x="" y="">cn.edu.sicnu.cs.controller.check_attendance.AttendanceController</node>
-            <node x="" y="">org.springframework.web.bind.annotation.RequestMapping</node>
-            <node x="" y="">org.springframework.stereotype.Controller</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="232.0" y="206.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.controller.check_attendance.AttendanceDetailController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.controller.check_attendance.AttendanceDetailController</OriginalElement>
-          <nodes>
-            <node x="" y="">org.springframework.web.bind.annotation.RequestMapping</node>
-            <node x="" y="">cn.edu.sicnu.cs.controller.check_attendance.AttendanceDetailController</node>
-            <node x="" y="">org.springframework.stereotype.Controller</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="232.0" y="264.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.controller.check_attendance.EmployeeController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.controller.check_attendance.EmployeeController</OriginalElement>
-          <nodes>
-            <node x="0.0" y="265.0">cn.edu.sicnu.cs.controller.check_attendance.EmployeeController</node>
-            <node x="252.0" y="0.0">org.springframework.web.bind.annotation.RequestMapping</node>
-            <node x="89.0" y="80.5">org.springframework.stereotype.Controller</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="cn.edu.sicnu.cs.controller.check_attendance.EmployeeController" target="org.springframework.stereotype.Controller">
-              <point x="-131.5" y="-165.5" />
-              <point x="131.5" y="240.0" />
-              <point x="160.5" y="240.0" />
-              <point x="0.0" y="27.0" />
-            </edge>
-            <edge source="cn.edu.sicnu.cs.controller.check_attendance.EmployeeController" target="org.springframework.web.bind.annotation.RequestMapping">
-              <point x="131.5" y="-165.5" />
-              <point x="394.5" y="240.0" />
-              <point x="365.5" y="240.0" />
-              <point x="0.0" y="107.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-73.0" y="213.0" />
-          <SelectedNodes>
-            <node>cn.edu.sicnu.cs.controller.check_attendance.EmployeeController</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.controller.check_attendance.SalaryController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.controller.check_attendance.SalaryController</OriginalElement>
-          <nodes>
-            <node x="" y="">cn.edu.sicnu.cs.controller.check_attendance.SalaryController</node>
-            <node x="" y="">org.springframework.web.bind.annotation.RequestMapping</node>
-            <node x="" y="">org.springframework.stereotype.Controller</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="243.0" y="195.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/HomePageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.controller.HomePageController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.controller.HomePageController</OriginalElement>
-          <nodes>
-            <node x="23.0" y="265.0">cn.edu.sicnu.cs.controller.HomePageController</node>
-            <node x="163.0" y="0.0">org.springframework.web.bind.annotation.RequestMapping</node>
-            <node x="0.0" y="80.5">org.springframework.stereotype.Controller</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="cn.edu.sicnu.cs.controller.HomePageController" target="org.springframework.web.bind.annotation.RequestMapping">
-              <point x="75.5" y="-27.0" />
-              <point x="249.5" y="240.0" />
-              <point x="276.5" y="240.0" />
-              <point x="0.0" y="107.5" />
-            </edge>
-            <edge source="cn.edu.sicnu.cs.controller.HomePageController" target="org.springframework.stereotype.Controller">
-              <point x="-75.5" y="-27.0" />
-              <point x="98.5" y="240.0" />
-              <point x="71.5" y="240.0" />
-              <point x="0.0" y="27.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-141.0" y="75.0" />
-          <SelectedNodes>
-            <node>cn.edu.sicnu.cs.controller.HomePageController</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/cn.edu.sicnu.cs.controller.company.CompanyController">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>cn.edu.sicnu.cs.controller.company.CompanyController</OriginalElement>
-          <nodes>
-            <node x="" y="">cn.edu.sicnu.cs.controller.company.CompanyController</node>
-            <node x="" y="">org.springframework.web.bind.annotation.RequestMapping</node>
-            <node x="" y="">org.springframework.stereotype.Controller</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="286.0" y="206.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/company/CompanyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="53" column="37" lean-forward="true" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/SalaryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/Constances.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.0.2.RELEASE/spring-webmvc-5.0.2.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="478" selection-start-line="478" selection-end-line="478" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.0.2.RELEASE/spring-webmvc-5.0.2.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="568" selection-start-line="568" selection-end-line="568" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.0.2.RELEASE/spring-web-5.0.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-aop/5.0.2.RELEASE/spring-aop-5.0.2.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/Interceptor/DBOptionInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/Interceptor/EmployeeInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/EmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="218" column="23" selection-start-line="218" selection-start-column="23" selection-end-line="218" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/AttendanceDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/AttendanceDetailMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/AttendanceDetailDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/EmployeeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        <state relative-caret-position="408">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/SpringMVC.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-367" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-aop/5.0.2.RELEASE/spring-aop-5.0.2.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="185" selection-start-line="185" selection-end-line="185" />
+        <state relative-caret-position="81">
+          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/analogy/DataAnalogyCheckOut.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/DepartmentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="182">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#1071#1072#0" expanded="true" />
+            <element signature="e#1119#1120#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Math.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/DepartmentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1872">
-          <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
+        <state relative-caret-position="168">
+          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/analogy/AverageAnalogy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/department/departments.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="480">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/analogy/VarianceAnalogy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/show_departments.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        <state relative-caret-position="61">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/analogy/ALinearRegressionAnalogy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/employee.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        <state relative-caret-position="264">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/delete_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee/update_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/department/before_work.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/no_data.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/salary/before_work.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/salary/salary_url_page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="28" column="10" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/salary/success.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/department/fail.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/department/success.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/employee/update_detail.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/department/update_detail.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="-370">
+          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/test/AttendanceDetailTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/DepartmentService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="115" column="13" lean-forward="true" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
+        <state relative-caret-position="267">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/utils/analogy/DataAnalogyOfCheckIn.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/employee/delete_detail.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/department/delete_detail.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="117" column="22" lean-forward="true" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
+        <state relative-caret-position="492">
+          <caret line="184" column="23" lean-forward="true" selection-start-line="184" selection-start-column="23" selection-end-line="184" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/AttendanceDetailService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/AttendanceMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="147" column="18" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
+        <state relative-caret-position="1344">
+          <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/analogy_all_today.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/options_department.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="95" column="54" selection-start-line="95" selection-start-column="54" selection-end-line="95" selection-end-column="54" />
+        <state relative-caret-position="192">
+          <caret line="59" column="41" lean-forward="true" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/certain_detail.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/delete_detail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="68" column="45" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
+        <state relative-caret-position="-16">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/check/employees_today_detail.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/update_detail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="216">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/AttendanceDetailController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/AttendanceDetailMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3624">
-          <caret line="171" column="22" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
+        <state relative-caret-position="528">
+          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/service/check_attendance/impl/AttendanceDetailServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/EmployeeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1169">
-          <caret line="327" column="16" lean-forward="true" selection-start-line="327" selection-start-column="16" selection-end-line="327" selection-end-column="16" />
+        <state relative-caret-position="-624">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/pojo/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/DepartmentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="17" column="118" lean-forward="true" selection-start-line="17" selection-start-column="118" selection-end-line="17" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CompanyMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="21" column="79" lean-forward="true" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/add_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#5;n#form#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/dao/check_attendance/AttendanceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/sicnu/cs/controller/check_attendance/DepartmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/department/success_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
         </state>
       </provider>
     </entry>

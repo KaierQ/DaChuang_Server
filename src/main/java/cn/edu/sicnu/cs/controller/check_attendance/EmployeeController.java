@@ -56,6 +56,9 @@ public class EmployeeController {
     public String selectAll(@RequestParam(value="cid") String cid,Model model){
         System.out.println("selectAll");
         List<Employee> employees = employeeService.selectAll();
+        if (employees.size()==0) {
+            return "employee/no_data";
+        }
         model.addAttribute("employees",employees);
         return "employee/employee";
     }
@@ -133,13 +136,21 @@ public class EmployeeController {
         Map<String,String> fieldMap = (Map<String, String>) request.getSession().getAttribute("fieldMap");
         String path = (String) request.getSession().getAttribute("path");
         System.out.println(fieldMap.get("cid")+" "+fieldMap.get("name")+" "+fieldMap.get("title")+" "+fieldMap.get("salary")+" "+fieldMap.get("department"));
+        //结果
+        ResultUtil resultUtil = new ResultUtil();
 
         //为员工生成id号
         IdUtils id = new IdUtils();
         idUtilsService.insert(id);
         //获取部门的id
         Department department = departmentService.selectByName(fieldMap.get("department"));
+        if(department==null){
+            //错误提示
+            resultUtil.setResult("false");
+            return resultUtil;
+        }
         department.setPersonnelNum(department.getPersonnelNum()+1);
+
         //生成员工实体类
         Employee employee = new Employee();
         employee.setId(id.getId());
@@ -166,13 +177,13 @@ public class EmployeeController {
         attendance.seteId(id.getId());
         attendanceService.insert(attendance);
 
-        ResultUtil resultUtil = new ResultUtil();
+
         if (ret<1){
             //错误提示
             resultUtil.setResult("false");
         }
         resultUtil.setResult(""+id.getId());
-//        file.delete();
+        file.delete();
         return resultUtil;
     }
 

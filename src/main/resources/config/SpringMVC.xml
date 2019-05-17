@@ -33,6 +33,7 @@
             <mvc:mapping path="/employee/*"/>
             <mvc:mapping path="/attendance/*"/>
             <mvc:mapping path="/attendanceDetail/*"/>
+            <mvc:mapping path="/department/*"/>
             <!--注册拦截器对象-->
             <bean class="cn.edu.sicnu.cs.Interceptor.DBOptionInterceptor"/>
         </mvc:interceptor>

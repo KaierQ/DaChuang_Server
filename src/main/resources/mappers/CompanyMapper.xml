@@ -22,10 +22,10 @@
   <insert id="insert" useGeneratedKeys="true" keyColumn="c_id" keyProperty="cId" parameterType="cn.edu.sicnu.cs.pojo.Company" >
     insert into company (c_id, company_name, ceo_name, 
       ceo_id, username, password, 
-      sys_check_password, intro)
+      sys_check_password, intro,tel)
     values (#{cId,jdbcType=INTEGER}, #{companyName,jdbcType=VARCHAR}, #{ceoName,jdbcType=VARCHAR}, 
       #{ceoId,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{sysCheckPassword,jdbcType=VARCHAR}, #{intro,jdbcType=LONGVARCHAR})
+      #{sysCheckPassword,jdbcType=VARCHAR}, #{intro,jdbcType=LONGVARCHAR},#{tel,jdbcType=VARCHAR})
   </insert>
 
   <update id="updateByPrimaryKey" parameterType="cn.edu.sicnu.cs.pojo.Company" >
@@ -38,12 +38,13 @@
       <if test="password!=null">password = #{password,jdbcType=VARCHAR},</if>
       <if test="sysCheckPassword!=null">sys_check_password = #{sysCheckPassword,jdbcType=VARCHAR},</if>
       <if test="intro!=null">intro = #{intro,jdbcType=LONGVARCHAR},</if>
+      <if test="tel!=null">tel = #{tel,jdbcType=LONGVARCHAR},</if>
     </trim>
     where c_id = #{cId,jdbcType=INTEGER}
   </update>
 
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select c_id, company_name, ceo_name, ceo_id, username, password, sys_check_password, 
+    select c_id, company_name, ceo_name, ceo_id, username, password, sys_check_password,tel,
     intro
     from company
     where c_id = #{cId,jdbcType=INTEGER}
@@ -51,7 +52,7 @@
 
   <select id="selectAll" resultMap="BaseResultMap" >
     select c_id, company_name, ceo_name, ceo_id, username, password, sys_check_password, 
-    intro
+    intro,tel
     from company
   </select>
 
@@ -62,6 +63,10 @@
 
   <select id="selectPasswordByUsername" resultMap="ManagerLoginCheckMap">
     select c_id,password from company where username = #{username};
+  </select>
+
+  <select id="createNewDB" parameterType="java.lang.String">
+   call company.build_newdb(#{dbName});
   </select>
 
 </mapper>

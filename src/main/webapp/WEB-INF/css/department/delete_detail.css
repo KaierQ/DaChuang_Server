@@ -1,0 +1,33 @@
+body{
+    text-align: center
+}
+.profile{
+    margin:0 auto; 
+    width:300px; 
+    height:fit-content; 
+    /* border:1px solid #F00 */
+}
+.fmV{
+    width: inherit;
+    background-color: lightsalmon
+}
+
+.input_div{
+    margin-bottom: 10px;
+    width:300px;
+}
+
+.input_div input{
+    width: inherit;
+    height: 20px;
+    border-radius: 7px;
+}
+
+.submit_btn{
+    width: inherit;
+    height: 30px;
+}
+.submit_btn input{
+    width: inherit;
+    border-radius: 7px;
+}

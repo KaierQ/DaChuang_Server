@@ -59,7 +59,7 @@
     </div>
     <div>
         <li>
-            <a href="/final_project/terminal/terminal?cid=${cid}" target="_blank">
+            <a href="/final_project/department/options?cid=${cid}" target="_blank">
                 <i class="u-icon-nav u-icon-nav-6"></i>职能部门
             </a>
         </li>

@@ -52,4 +52,9 @@ public class CompanyServiceImpl implements CompanyService {
         return companyDao.selectPasswordByUsername(username);
     }
 
+    @Override
+    public void createNewDB(String dbName) {
+        companyDao.createNewDB(dbName);
+    }
+
 }

@@ -54,4 +54,16 @@ public class Department {
     public void setPersonnelNum(Integer personnelNum) {
         this.personnelNum = personnelNum;
     }
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", leaderId=" + leaderId +
+                ", leaderName='" + leaderName + '\'' +
+                ", personnelNum=" + personnelNum +
+                '}';
+    }
+
 }

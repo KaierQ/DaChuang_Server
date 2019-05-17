@@ -51,4 +51,11 @@ public interface CompanyDao {
      */
     ManagerLoginCheckBean selectPasswordByUsername(String username);
 
+
+    /**
+     * 新建数据库
+     * @param dbName
+     */
+    void createNewDB(String dbName);
+
 }

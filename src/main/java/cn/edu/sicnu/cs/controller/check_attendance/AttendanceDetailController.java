@@ -147,6 +147,9 @@ public class AttendanceDetailController {
     public String getEmployeeDetail(@RequestParam(value = "cid")String cid,Model model){
         //获取今日所有员工打卡信息
         List<EmployeeTodayDetail> employeeTodayDetails = attendanceDetailService.selectAllTodayDetail();
+        if(employeeTodayDetails.size()==0){
+            return "employee/no_data";
+        }
         model.addAttribute("cid",cid);
         model.addAttribute("employeeTodayDetails",employeeTodayDetails);
         return "check/employees_today_detail";
